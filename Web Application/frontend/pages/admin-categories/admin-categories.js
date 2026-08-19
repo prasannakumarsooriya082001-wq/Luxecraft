@@ -39,7 +39,7 @@ const addCategoryBtn = document.getElementById("add-category");
 
 addCategoryBtn.addEventListener("click", function () {
 
-    window.location.href = "/frontend/pages/add-categories/add-categories.html";
+    window.location.href = "/pages/add-categories/add-categories.html";
 
 });
 
@@ -160,6 +160,6 @@ function deleteCategory(categoryId) {
 function editCategory(categoryId) {
 
     window.location.href =
-        "/frontend/pages/edit-category/edit-category.html?id=" + categoryId;
+        "/pages/edit-category/edit-category.html?id=" + categoryId;
 
 }

@@ -67,7 +67,7 @@ otpForm.addEventListener("submit", async function (e) {
         );
 
         window.location.href =
-            "/frontend/pages/forgot-password/forgot-password.html";
+            "/pages/forgot-password/forgot-password.html";
 
         return;
     }
@@ -145,7 +145,7 @@ otpForm.addEventListener("submit", async function (e) {
 
         // Go to reset password
         window.location.href =
-            "/frontend/pages/reset-password/reset-password.html";
+            "/pages/reset-password/reset-password.html";
 
 
     } catch (error) {

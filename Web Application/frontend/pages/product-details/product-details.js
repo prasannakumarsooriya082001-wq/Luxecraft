@@ -128,7 +128,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/login/login.html";
+                        "/pages/login/login.html";
 
                 };
 
@@ -145,7 +145,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/register/register.html";
+                        "/pages/register/register.html";
 
                 };
 
@@ -178,7 +178,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/profile/profile.html";
+                        "/pages/profile/profile.html";
 
                 };
 
@@ -224,7 +224,7 @@ function setupNavbar() {
                 if (!currentCustomer) {
 
                     window.location.href =
-                        "/frontend/pages/login/login.html";
+                        "/pages/login/login.html";
 
                     return;
 
@@ -232,7 +232,7 @@ function setupNavbar() {
 
 
                 window.location.href =
-                    "/frontend/pages/cart/cart.html";
+                    "/pages/cart/cart.html";
 
             };
 
@@ -550,7 +550,7 @@ function addCurrentProductToCart(
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
 
         return;
@@ -696,7 +696,7 @@ function setupBuyNow() {
 
 
                 window.location.href =
-                    "/frontend/pages/login/login.html";
+                    "/pages/login/login.html";
 
 
                 return;
@@ -758,7 +758,7 @@ function setupBuyNow() {
                     () => {
 
                         window.location.href =
-                            "/frontend/pages/cart/cart.html";
+                            "/pages/cart/cart.html";
 
                     }
                 )
@@ -959,7 +959,7 @@ function displayRelatedProducts(
                 <div class="product-card">
 
                     <a
-                        href="/frontend/pages/product-details/product-details.html?id=${product.productId}">
+                        href="/pages/product-details/product-details.html?id=${product.productId}">
 
                         <img
                             src="${API_BASE_URL}/uploads/${product.imageUrl}"
@@ -971,7 +971,7 @@ function displayRelatedProducts(
                     <h3>
 
                         <a
-                            href="/frontend/pages/product-details/product-details.html?id=${product.productId}">
+                            href="/pages/product-details/product-details.html?id=${product.productId}">
 
                             ${product.productName}
 
@@ -1036,7 +1036,7 @@ function addRelatedToCart(
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
 
         return;
@@ -1142,7 +1142,7 @@ function addRelatedToWishlist(
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
 
         return;
@@ -1157,7 +1157,7 @@ function addRelatedToWishlist(
 
 
     window.location.href =
-        "/frontend/pages/wishlist/wishlist.html";
+        "/pages/wishlist/wishlist.html";
 
 }
 
@@ -1179,7 +1179,7 @@ function setupNavigation() {
     ) {
 
         homeLinks[0].href =
-            "/frontend/index.html";
+            "/index.html";
 
     }
 
@@ -1189,7 +1189,7 @@ function setupNavigation() {
     ) {
 
         homeLinks[1].href =
-            "/frontend/pages/products/products.html";
+            "/pages/products/products.html";
 
     }
 
@@ -1360,7 +1360,7 @@ function submitReview() {
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
 
         return;

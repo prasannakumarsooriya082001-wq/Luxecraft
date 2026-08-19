@@ -18,7 +18,7 @@ if (!loggedInCustomer || !loggedInCustomer.token) {
     alert("Please login to continue.");
 
     window.location.href =
-        "/frontend/pages/login/login.html";
+        "/pages/login/login.html";
 }
 
 
@@ -589,7 +589,7 @@ placeOrderButton.addEventListener(
 
 
             window.location.href =
-                "/frontend/pages/login/login.html";
+                "/pages/login/login.html";
 
 
             return;
@@ -912,7 +912,7 @@ async function placeCashOnDeliveryOrder(
 
 
         window.location.href =
-            "/frontend/pages/order-success/order-success.html";
+            "/pages/order-success/order-success.html";
 
     }
     catch (error) {
@@ -1561,7 +1561,7 @@ async function createPaidOrder(
 
 
         window.location.href =
-            "/frontend/pages/order-success/order-success.html";
+            "/pages/order-success/order-success.html";
 
     }
     catch (error) {

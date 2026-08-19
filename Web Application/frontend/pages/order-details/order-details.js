@@ -27,7 +27,7 @@ function loadOrderDetails() {
     if (!loggedInCustomer) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -47,7 +47,7 @@ function loadOrderDetails() {
         alert("Order not found");
 
         window.location.href =
-            "/frontend/pages/orders/order.html";
+            "/pages/orders/order.html";
 
         return;
 

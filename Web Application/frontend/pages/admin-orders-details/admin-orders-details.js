@@ -15,7 +15,7 @@ if (
     localStorage.removeItem("loggedInAdmin");
 
     window.location.replace(
-        "/frontend/pages/login/login.html"
+        "/pages/login/login.html"
     );
 }
 
@@ -38,7 +38,7 @@ if (!orderId) {
     alert("Order ID not found");
 
     window.location.href =
-        "/frontend/pages/admin-orders/admin-orders.html";
+        "/pages/admin-orders/admin-orders.html";
 
 }
 

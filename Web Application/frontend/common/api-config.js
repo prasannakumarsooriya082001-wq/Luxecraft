@@ -85,7 +85,7 @@ document.addEventListener("click", function (event) {
 
     alert("Please log in to view your orders.");
 
-    window.location.href = "/frontend/pages/login/login.html";
+    window.location.href = "/pages/login/login.html";
 
 });
 
@@ -135,7 +135,7 @@ function handleSessionExpired() {
 
     alert("Your session has expired. Please log in again.");
 
-    window.location.href = "/frontend/pages/login/login.html";
+    window.location.href = "/pages/login/login.html";
 }
 
 

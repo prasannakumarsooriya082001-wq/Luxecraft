@@ -114,7 +114,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/login/login.html";
+                        "/pages/login/login.html";
 
                 };
 
@@ -135,7 +135,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/register/register.html";
+                        "/pages/register/register.html";
 
                 };
 
@@ -152,7 +152,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/login/login.html";
+                        "/pages/login/login.html";
 
                 };
 
@@ -190,7 +190,7 @@ function setupNavbar() {
             function () {
 
                 window.location.href =
-                    "/frontend/pages/profile/profile.html";
+                    "/pages/profile/profile.html";
 
             };
 
@@ -216,7 +216,7 @@ function setupNavbar() {
 
 
                 window.location.href =
-                    "/frontend/index.html";
+                    "/index.html";
 
             };
 
@@ -233,7 +233,7 @@ function setupNavbar() {
             function () {
 
                 window.location.href =
-                    "/frontend/pages/cart/cart.html";
+                    "/pages/cart/cart.html";
 
             };
 
@@ -284,7 +284,7 @@ function loadCart() {
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
 
         return;
@@ -747,7 +747,7 @@ function updateQuantity(
     ) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
 
         return;
@@ -850,7 +850,7 @@ function removeCartItem(cartId) {
     ) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
 
         return;
@@ -974,7 +974,7 @@ function setupCheckout() {
             if (!loggedInCustomer) {
 
                 window.location.href =
-                    "/frontend/pages/login/login.html";
+                    "/pages/login/login.html";
 
 
                 return;
@@ -1021,7 +1021,7 @@ function setupCheckout() {
             // -----------------------------
 
             window.location.href =
-                "/frontend/pages/checkout/checkout.html";
+                "/pages/checkout/checkout.html";
 
         };
 
@@ -1035,7 +1035,7 @@ function setupCheckout() {
 function goToProducts() {
 
     window.location.href =
-        "/frontend/pages/products/products.html";
+        "/pages/products/products.html";
 
 }
 
@@ -1070,7 +1070,7 @@ function showLoginMessage() {
             <button
                 onclick="
                     window.location.href =
-                    '/frontend/pages/login/login.html'
+                    '/pages/login/login.html'
                 ">
 
                 Login
@@ -1113,7 +1113,7 @@ function showLoginMessage() {
 //     if (!loggedInCustomer) {
 
 //         window.location.href =
-//             "/frontend/pages/login/login.html";
+//             "/pages/login/login.html";
 
 //         return;
 //     }
@@ -1447,7 +1447,7 @@ function showLoginMessage() {
 //     if (!loggedInCustomer) {
 
 //         window.location.href =
-//             "/frontend/pages/login/login.html";
+//             "/pages/login/login.html";
 
 //         return;
 
@@ -1495,7 +1495,7 @@ function showLoginMessage() {
 //         // Cart has products
 
 //         window.location.href =
-//             "/frontend/pages/checkout/checkout.html";
+//             "/pages/checkout/checkout.html";
 
 //     })
 

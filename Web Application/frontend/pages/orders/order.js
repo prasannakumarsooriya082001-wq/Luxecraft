@@ -25,7 +25,7 @@ function loadOrders() {
     if (!loggedInCustomer) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -255,6 +255,6 @@ function viewOrderDetails(orderId) {
 
 
     window.location.href =
-        "/frontend/pages/order-details/order-details.html";
+        "/pages/order-details/order-details.html";
 
 }

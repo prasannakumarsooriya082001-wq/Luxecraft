@@ -125,7 +125,7 @@ updateForm.addEventListener("submit",function(e){
 
         alert("Category Updated Successfully");
 
-        window.location.href="/frontend/pages/admin-categories/admin-categories.html";
+        window.location.href="/pages/admin-categories/admin-categories.html";
 
     })
     .catch(error =>{

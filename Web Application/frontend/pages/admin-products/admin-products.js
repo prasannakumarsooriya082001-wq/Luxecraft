@@ -523,12 +523,12 @@ function editProduct(productId) {
     console.log("Edit Product ID :", productId);
 
     window.location.href =
-        "/frontend/pages/edit-product/edit-product.html?id=" + productId;
+        "/pages/edit-product/edit-product.html?id=" + productId;
 
 }
 
 const addProductBtn = document.getElementById("add-product");
 
 addProductBtn.addEventListener("click", function () {
-    window.location.href = "/frontend/pages/add-products/add-products.html";
+    window.location.href = "/pages/add-products/add-products.html";
 });

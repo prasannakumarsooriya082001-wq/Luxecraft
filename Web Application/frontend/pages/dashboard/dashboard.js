@@ -18,7 +18,7 @@ if (
 
     localStorage.removeItem("loggedInAdmin");
 
-    window.location.replace("/frontend/pages/login/login.html"
+    window.location.replace("/pages/login/login.html"
     );
 
 }
@@ -43,7 +43,7 @@ function loadDashboardData() {
         admin.role !== "ADMIN"
     ) {
 
-        window.location.replace("/frontend/pages/login/login.html");
+        window.location.replace("/pages/login/login.html");
 
         return;
 
@@ -216,7 +216,7 @@ function loadRecentOrders() {
     ) {
 
         window.location.replace(
-            "/frontend/pages/login/login.html"
+            "/pages/login/login.html"
         );
 
         return;
@@ -646,7 +646,7 @@ if (logoutBtn) {
             // -------------------------------------------
 
             window.location.replace(
-                "/frontend/pages/login/login.html"
+                "/pages/login/login.html"
             );
 
         }

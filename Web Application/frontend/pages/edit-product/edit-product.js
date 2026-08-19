@@ -397,7 +397,7 @@ updateBtn.addEventListener("click", function () {
             // ==========================
 
             window.location.href =
-                "/frontend/pages/admin-products/admin-products.html";
+                "/pages/admin-products/admin-products.html";
 
         })
 

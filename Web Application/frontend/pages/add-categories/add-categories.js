@@ -88,7 +88,7 @@ categoryForm.addEventListener("submit", function (e) {
 
         categoryForm.reset();
 
-        window.location.href ="/frontend/pages/admin-categories/admin-categories.html";
+        window.location.href ="/pages/admin-categories/admin-categories.html";
 
     })
 
@@ -116,7 +116,7 @@ cancelBtn.addEventListener("click", function () {
 
     if (categoryName === "" && description === "") {
 
-        window.location.href ="/frontend/pages/admin-categories/admin-categories.html";
+        window.location.href ="/pages/admin-categories/admin-categories.html";
 
         return;
 
@@ -126,7 +126,7 @@ cancelBtn.addEventListener("click", function () {
 
     if (confirmCancel) {
 
-        window.location.href ="/frontend/pages/admin-categories/admin-categories.html";
+        window.location.href ="/pages/admin-categories/admin-categories.html";
 
     }
 

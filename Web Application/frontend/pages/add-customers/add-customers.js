@@ -16,7 +16,7 @@ if (
     localStorage.removeItem("loggedInAdmin");
 
     window.location.replace(
-        "/frontend/pages/login/login.html"
+        "/pages/login/login.html"
     );
 
 }
@@ -191,7 +191,7 @@ if (customerForm) {
 
 
                     window.location.href =
-                        "/frontend/pages/admin-customers/admin-customers.html";
+                        "/pages/admin-customers/admin-customers.html";
 
                 })
 
@@ -234,7 +234,7 @@ if (cancelBtn) {
             if (confirmCancel) {
 
                 window.location.href =
-                    "/frontend/pages/admin-customers/admin-customers.html";
+                    "/pages/admin-customers/admin-customers.html";
 
             }
 

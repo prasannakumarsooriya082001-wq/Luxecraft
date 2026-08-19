@@ -24,7 +24,7 @@ document.addEventListener(
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/products/products.html";
+                        "/pages/products/products.html";
 
                 }
             );
@@ -48,7 +48,7 @@ document.addEventListener(
                 "click",
                 function () {
 
-                    window.location.href ="/frontend/pages/products/products.html";
+                    window.location.href ="/pages/products/products.html";
 
                 }
             );

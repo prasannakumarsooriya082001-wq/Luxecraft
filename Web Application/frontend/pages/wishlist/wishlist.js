@@ -81,7 +81,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/login/login.html";
+                        "/pages/login/login.html";
 
                 };
 
@@ -98,7 +98,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/register/register.html";
+                        "/pages/register/register.html";
 
                 };
 
@@ -125,7 +125,7 @@ function setupNavbar() {
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/profile/profile.html";
+                        "/pages/profile/profile.html";
 
                 };
 
@@ -147,7 +147,7 @@ function setupNavbar() {
 
 
                     window.location.href =
-                        "/frontend/index.html";
+                        "/index.html";
 
                 };
 
@@ -172,7 +172,7 @@ function setupNavbar() {
                 if (!currentCustomer) {
 
                     window.location.href =
-                        "/frontend/pages/login/login.html";
+                        "/pages/login/login.html";
 
                     return;
 
@@ -180,7 +180,7 @@ function setupNavbar() {
 
 
                 window.location.href =
-                    "/frontend/pages/cart/cart.html";
+                    "/pages/cart/cart.html";
 
             };
 
@@ -206,7 +206,7 @@ function loadWishlist() {
     if (!customer) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -230,7 +230,7 @@ function loadWishlist() {
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -402,7 +402,7 @@ function displayWishlist(wishlist) {
 
 
                 <a
-                    href="/frontend/pages/products/products.html"
+                    href="/pages/products/products.html"
                     class="shop-btn"
                 >
                     Explore Products
@@ -478,7 +478,7 @@ function createWishlistCard(
         product.imageUrl
             ? `${API_BASE_URL}/uploads/` +
               product.imageUrl.trim()
-            : "/frontend/assets/images/sofa1.jpg";
+            : "/assets/images/sofa1.jpg";
 
 
     // =================================================
@@ -519,7 +519,7 @@ function createWishlistCard(
                 alt="${product.productName}"
                 onerror="
                     this.onerror=null;
-                    this.src='/frontend/assets/images/sofa1.jpg';
+                    this.src='/assets/images/sofa1.jpg';
                 "
             >
 
@@ -609,7 +609,7 @@ function viewProduct(
 ) {
 
     window.location.href =
-        "/frontend/pages/product-details/product-details.html?id=" +
+        "/pages/product-details/product-details.html?id=" +
         productId;
 
 }
@@ -634,7 +634,7 @@ function removeFromWishlist(
     if (!customer) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -769,7 +769,7 @@ function addWishlistToCart(
     if (!customer) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -792,7 +792,7 @@ function addWishlistToCart(
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 

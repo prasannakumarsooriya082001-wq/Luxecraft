@@ -7,7 +7,7 @@ const loggedInCustomer = JSON.parse(localStorage.getItem("loggedInCustomer"));
 
 if (!loggedInCustomer) {
 
-    window.location.href = "/frontend/pages/login/login.html";
+    window.location.href = "/pages/login/login.html";
 
 }
 
@@ -62,7 +62,7 @@ else {
 
         localStorage.removeItem("loggedInCustomer");
 
-        window.location.href ="/frontend/pages/login/login.html";
+        window.location.href ="/pages/login/login.html";
 
     });
 
@@ -73,7 +73,7 @@ else {
 
 document.getElementById("backButton").addEventListener("click", function () {
 
-        window.location.href = "/frontend/index.html";
+        window.location.href = "/index.html";
 
     });
 
@@ -84,6 +84,6 @@ document.getElementById("logoutButton").addEventListener("click", function () {
 
         localStorage.removeItem("loggedInCustomer");
 
-        window.location.href ="/frontend/index.html";
+        window.location.href ="/index.html";
 
     });

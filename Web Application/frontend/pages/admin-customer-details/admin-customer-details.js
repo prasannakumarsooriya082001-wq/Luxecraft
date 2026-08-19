@@ -17,7 +17,7 @@ if (
     localStorage.removeItem("loggedInAdmin");
 
     window.location.replace(
-        "/frontend/pages/login/login.html"
+        "/pages/login/login.html"
     );
 
 }
@@ -43,7 +43,7 @@ if (!customerId) {
     alert("Customer ID not found");
 
     window.location.replace(
-        "/frontend/pages/admin-customers/admin-customers.html"
+        "/pages/admin-customers/admin-customers.html"
     );
 
 }

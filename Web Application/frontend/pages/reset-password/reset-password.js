@@ -50,7 +50,7 @@ if (!email || otpVerified !== "true") {
     );
 
     window.location.href =
-        "/frontend/pages/forgot-password/forgot-password.html";
+        "/pages/forgot-password/forgot-password.html";
 
 }
 
@@ -289,7 +289,7 @@ form.addEventListener(
             // Go to Login
 
             window.location.href =
-                "/frontend/pages/login/login.html";
+                "/pages/login/login.html";
 
 
         } catch (error) {

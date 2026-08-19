@@ -115,7 +115,7 @@ function setupNavbar() {
 
             loginButton.onclick = function () {
 
-                window.location.href = "/frontend/pages/login/login.html";
+                window.location.href = "/pages/login/login.html";
 
             };
 
@@ -133,7 +133,7 @@ function setupNavbar() {
 
             signUpButton.onclick = function () {
 
-                window.location.href = "/frontend/pages/register/register.html";
+                window.location.href = "/pages/register/register.html";
 
             };
 
@@ -149,7 +149,7 @@ function setupNavbar() {
             cartButton.onclick =
                 function () {
 
-                    window.location.href = "/frontend/pages/login/login.html";
+                    window.location.href = "/pages/login/login.html";
 
                 };
 
@@ -180,7 +180,7 @@ function setupNavbar() {
         loginButton.onclick =
             function () {
 
-                window.location.href = "/frontend/pages/profile/profile.html";
+                window.location.href = "/pages/profile/profile.html";
 
             };
 
@@ -203,7 +203,7 @@ function setupNavbar() {
                 localStorage.removeItem("loggedInCustomer");
 
 
-                window.location.href = "/frontend/index.html";
+                window.location.href = "/index.html";
 
             };
 
@@ -219,7 +219,7 @@ function setupNavbar() {
         cartButton.onclick =
             function () {
 
-                window.location.href = "/frontend/pages/cart/cart.html";
+                window.location.href = "/pages/cart/cart.html";
 
             };
 
@@ -310,7 +310,7 @@ function verifyCustomer() {
                 loginButton.onclick =
                     function () {
 
-                        window.location.href = "/frontend/pages/login/login.html";
+                        window.location.href = "/pages/login/login.html";
 
                     };
 
@@ -324,7 +324,7 @@ function verifyCustomer() {
                 signUpButton.onclick =
                     function () {
 
-                        window.location.href = "/frontend/pages/register/register.html";
+                        window.location.href = "/pages/register/register.html";
 
                     };
 
@@ -569,9 +569,9 @@ function displayProducts(products) {
 
                     class="image-link"
 
-                    href="/frontend/pages/product-details/product-details.html?id=${product.productId}">
+                    href="/pages/product-details/product-details.html?id=${product.productId}">
 
-                    <img src="${API_BASE_URL}/uploads/${product.imageUrl.trim()}" alt="${product.productName}" onerror="this.onerror=null; this.src='/frontend/assets/images/sofa1.jpg';">
+                    <img src="${API_BASE_URL}/uploads/${product.imageUrl.trim()}" alt="${product.productName}" onerror="this.onerror=null; this.src='/assets/images/sofa1.jpg';">
 
                 </a>
 
@@ -580,7 +580,7 @@ function displayProducts(products) {
 
                 <h3>
 
-                    <a href="/frontend/pages/product-details/product-details.html?id=${product.productId}" class="product-title"> ${product.productName}</a>
+                    <a href="/pages/product-details/product-details.html?id=${product.productId}" class="product-title"> ${product.productName}</a>
 
                 </h3>
 
@@ -1004,7 +1004,7 @@ function toggleWishlist(productId) {
         );
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -1026,7 +1026,7 @@ function toggleWishlist(productId) {
         );
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -1308,7 +1308,7 @@ function removeFromWishlist(
 //     if (!loggedInCustomer) {
 
 //         window.location.href =
-//             "/frontend/pages/login/login.html";
+//             "/pages/login/login.html";
 
 //         return;
 
@@ -1436,7 +1436,7 @@ function addToCart(productId) {
     if (!loggedInCustomer) {
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 
@@ -1460,7 +1460,7 @@ function addToCart(productId) {
 
 
         window.location.href =
-            "/frontend/pages/login/login.html";
+            "/pages/login/login.html";
 
         return;
 

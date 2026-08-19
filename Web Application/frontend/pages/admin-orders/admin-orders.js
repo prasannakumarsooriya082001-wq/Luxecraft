@@ -17,7 +17,7 @@ if (
     localStorage.removeItem("loggedInAdmin");
 
     window.location.replace(
-        "/frontend/pages/login/login.html"
+        "/pages/login/login.html"
     );
 
 }
@@ -280,7 +280,7 @@ function displayOrders(orders) {
             <td>
 
                 <a
-                    href="/frontend/pages/admin-orders-details/admin-orders-details.html?id=${order.orderId}"
+                    href="/pages/admin-orders-details/admin-orders-details.html?id=${order.orderId}"
                     class="view-btn"
                     title="View Order Details"
                 >

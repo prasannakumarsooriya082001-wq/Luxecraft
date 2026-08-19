@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ) {
 
                     window.location.href =
-                        "/frontend/pages/login/login.html";
+                        "/pages/login/login.html";
 
                     return;
 
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // User logged in
 
                 window.location.href =
-                    "/frontend/pages/cart/cart.html";
+                    "/pages/cart/cart.html";
 
             }
         );
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function () {
 
                 window.location.href =
-                    "/frontend/pages/login/login.html";
+                    "/pages/login/login.html";
 
             }
         );
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function () {
 
                 window.location.href =
-                    "/frontend/pages/register/register.html";
+                    "/pages/register/register.html";
 
             }
         );
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function () {
 
                 window.location.href =
-                    "/frontend/pages/profile/profile.html";
+                    "/pages/profile/profile.html";
 
             }
         );
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Go Home
 
                 window.location.href =
-                    "/frontend/index.html";
+                    "/index.html";
 
             }
         );

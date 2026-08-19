@@ -20,7 +20,7 @@ if (
     localStorage.removeItem("loggedInAdmin");
 
     window.location.replace(
-        "/frontend/pages/login/login.html"
+        "/pages/login/login.html"
     );
 
 }

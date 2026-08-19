@@ -516,7 +516,7 @@ document.addEventListener(
                 function () {
 
                     window.location.href =
-                        "/frontend/pages/products/products.html";
+                        "/pages/products/products.html";
 
                 }
             );

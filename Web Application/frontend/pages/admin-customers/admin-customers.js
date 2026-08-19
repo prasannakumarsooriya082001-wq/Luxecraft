@@ -17,7 +17,7 @@ if (
     localStorage.removeItem("loggedInAdmin");
 
     window.location.replace(
-        "/frontend/pages/login/login.html"
+        "/pages/login/login.html"
     );
 
 }
@@ -180,7 +180,7 @@ function displayCustomers(data) {
             <td>
 
                 <a
-                    href="/frontend/pages/admin-customer-details/admin-customer-details.html?id=${customer.customerId}"
+                    href="/pages/admin-customer-details/admin-customer-details.html?id=${customer.customerId}"
                     class="view-btn">
 
                     <i class="fa-solid fa-eye"></i>
@@ -188,7 +188,7 @@ function displayCustomers(data) {
                 </a>
 
                 <a
-                    href="/frontend/pages/edit-customers/edit-customers.html?id=${customer.customerId}"
+                    href="/pages/edit-customers/edit-customers.html?id=${customer.customerId}"
                     class="edit-btn">
 
                     <i class="fa-solid fa-pen"></i>

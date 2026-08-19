@@ -116,7 +116,7 @@ registerForm.addEventListener("submit", function (event) {
 
         alert("Registration Successful!");
 
-        window.location.href ="/frontend/pages/login/login.html";
+        window.location.href ="/pages/login/login.html";
 
     })
 

@@ -19,7 +19,7 @@ if (!loggedInAdmin
 
     localStorage.removeItem("loggedInAdmin");
 
-    window.location.href = "/frontend/pages/login/login.html";
+    window.location.href = "/pages/login/login.html";
 
 }
 

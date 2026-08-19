@@ -298,7 +298,7 @@ loginForm.addEventListener("submit", function (event) {
                 // Admin Dashboard
 
                 window.location.replace(
-                    "/frontend/pages/dashboard/dashboard.html"
+                    "/pages/dashboard/dashboard.html"
                 );
 
 
@@ -334,9 +334,10 @@ loginForm.addEventListener("submit", function (event) {
                 window.location.replace(
                     // Only ever an in-app path, never an absolute URL from
                     // somewhere else - that would be an open redirect.
-                    pendingRedirect && pendingRedirect.startsWith("/frontend/")
+                    pendingRedirect && pendingRedirect.startsWith("/")
+                        && !pendingRedirect.startsWith("//")
                         ? pendingRedirect
-                        : "/frontend/index.html"
+                        : "/index.html"
                 );
 
             }

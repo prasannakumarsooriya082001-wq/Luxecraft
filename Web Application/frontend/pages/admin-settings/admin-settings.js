@@ -24,7 +24,7 @@ if (
     localStorage.removeItem("loggedInAdmin");
 
     window.location.replace(
-        "/frontend/pages/login/login.html"
+        "/pages/login/login.html"
     );
 
 }
@@ -758,7 +758,7 @@ if (saveSettingsBtn) {
 
 const logoutLink =
     document.querySelector(
-        'a[href="/frontend/pages/login/login.html"]'
+        'a[href="/pages/login/login.html"]'
     );
 
 

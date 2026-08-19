@@ -70,7 +70,7 @@ form.addEventListener("submit", async function (e) {
         alert("OTP sent successfully to your email.");
 
         window.location.href =
-            "/frontend/pages/verify-otp/verify-otp.html";
+            "/pages/verify-otp/verify-otp.html";
 
     } catch (error) {
 
