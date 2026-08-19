@@ -12,7 +12,6 @@ import com.luxecraft.luxecraft.Service.ReviewService;
 
 @RestController
 @RequestMapping("/review")
-@CrossOrigin("*")
 public class ReviewController {
 
     @Autowired

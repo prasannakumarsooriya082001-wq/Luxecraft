@@ -12,7 +12,6 @@ import com.luxecraft.luxecraft.Service.WishlistService;
 
 @RestController
 @RequestMapping("/wishlist")
-@CrossOrigin("*")
 public class WishlistController {
 
     @Autowired
