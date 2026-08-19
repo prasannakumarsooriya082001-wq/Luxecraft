@@ -1,10 +1,13 @@
-// Single source of truth for the backend API base URL.
-// Change this one value when the backend host or port changes
-// (e.g. to "https://api.luxecraft.com" in production).
+// Single source of truth for the backend API base URL. Every API call
+// and every product image URL on every page is built from this one value.
+//
+// Points at the deployed Railway backend. To develop against a backend
+// running on this machine, swap the two lines below.
 //
 // Loaded as a plain script before every other page script, so
 // API_BASE_URL is available globally to nav.js and each page's own JS.
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://luxecraft-production.up.railway.app";
+// const API_BASE_URL = "http://localhost:8080";
 
 
 // =====================================================
