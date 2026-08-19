@@ -336,7 +336,7 @@ loginForm.addEventListener("submit", function (event) {
                     // somewhere else - that would be an open redirect.
                     pendingRedirect && pendingRedirect.startsWith("/frontend/")
                         ? pendingRedirect
-                        : "/frontend/pages/home/index.html"
+                        : "/frontend/index.html"
                 );
 
             }

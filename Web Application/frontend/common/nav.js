@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Go Home
 
                 window.location.href =
-                    "/frontend/pages/home/index.html";
+                    "/frontend/index.html";
 
             }
         );

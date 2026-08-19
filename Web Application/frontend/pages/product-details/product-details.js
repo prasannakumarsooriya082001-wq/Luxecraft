@@ -1179,7 +1179,7 @@ function setupNavigation() {
     ) {
 
         homeLinks[0].href =
-            "/frontend/pages/home/index.html";
+            "/frontend/index.html";
 
     }
 

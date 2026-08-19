@@ -73,7 +73,7 @@ else {
 
 document.getElementById("backButton").addEventListener("click", function () {
 
-        window.location.href = "/frontend/pages/home/index.html";
+        window.location.href = "/frontend/index.html";
 
     });
 
@@ -84,6 +84,6 @@ document.getElementById("logoutButton").addEventListener("click", function () {
 
         localStorage.removeItem("loggedInCustomer");
 
-        window.location.href ="/frontend/pages/home/index.html";
+        window.location.href ="/frontend/index.html";
 
     });

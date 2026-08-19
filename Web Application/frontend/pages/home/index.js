@@ -162,7 +162,7 @@ function setupNavbar() {
 
 
             window.location.href =
-                "/frontend/pages/home/index.html";
+                "/frontend/index.html";
 
         };
 

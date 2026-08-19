@@ -203,7 +203,7 @@ function setupNavbar() {
                 localStorage.removeItem("loggedInCustomer");
 
 
-                window.location.href = "/frontend/pages/home/index.html";
+                window.location.href = "/frontend/index.html";
 
             };
 
