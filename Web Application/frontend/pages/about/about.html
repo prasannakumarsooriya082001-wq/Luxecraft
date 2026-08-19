@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - LuxeCraft</title>
+
+    <link rel="stylesheet" href="/frontend/pages/about/about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    L
+                </div>
+
+                <h2>
+                    LuxeCraft
+                </h2>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="/frontend/pages/home/index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/products/products.html">
+                            Sofas
+                        </a>
+                    </li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+
+                    <li>
+                        <a href="/frontend/pages/about/about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/contact/contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- NAV RIGHT -->
+
+            <div class="nav-right">
+
+                <!-- CART -->
+
+                <button class="icon-btn1 cart1" id="cartButton">
+
+                    🛒
+
+                    <span class="badge" id="cartBadge">
+                        0
+                    </span>
+
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <button class="login-btn1" id="loginButton">
+
+                    Login
+
+                </button>
+
+
+                <!-- SIGN UP -->
+
+                <button class="signup-btn1" id="signupButton">
+
+                    Sign Up
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button class="profile-btn1" id="profileButton" style="display:none;">
+
+                    
+
+                    <span id="profileName">
+                        Profile
+                    </span>
+
+                </button>
+
+
+                <!-- LOGOUT -->
+
+                <button class="logout-btn1" id="logoutButton" style="display:none;">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         BREADCRUMB
+    ====================================================== -->
+
+    <section class="breadcrumb">
+
+        <div class="breadcrumb-container">
+
+            <a href="/frontend/pages/home/index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <span>
+                About Us
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT HERO
+    ====================================================== -->
+
+    <section class="about-hero">
+
+        <div class="about-hero-container">
+
+            <div class="about-hero-content">
+
+                <span class="small-title">
+                    ABOUT LUXECRAFT
+                </span>
+
+                <h1>
+                    Crafted For
+                    <span>Comfort & Luxury</span>
+                </h1>
+
+                <p>
+                    At LuxeCraft, we believe that a sofa is more than
+                    just furniture. It is where comfort meets style,
+                    where families gather and where memories are made.
+                </p>
+
+                <button class="hero-btn" id="exploreBtn">
+
+                    Explore Our Sofas
+
+                </button>
+
+            </div>
+
+
+            <div class="about-hero-image">
+
+                <img src="/frontend/assets/images/MainSofaImage.jpg" alt="LuxeCraft Sofa">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         OUR STORY
+    ====================================================== -->
+
+    <section class="story">
+
+        <div class="story-container">
+
+            <div class="story-image">
+
+                <img src="/frontend/assets/images/sofa1.jpg" alt="LuxeCraft Furniture">
+
+            </div>
+
+
+            <div class="story-content">
+
+                <span class="section-label">
+                    OUR STORY
+                </span>
+
+                <h2>
+                    Designed With
+                    <span>Passion</span>
+                </h2>
+
+                <p>
+                    LuxeCraft was created with one simple idea —
+                    to bring premium comfort and timeless furniture
+                    designs into every home.
+                </p>
+
+                <p>
+                    From carefully selected materials to thoughtful
+                    craftsmanship, every LuxeCraft sofa is designed
+                    to combine elegance, durability and everyday
+                    comfort.
+                </p>
+
+                <p>
+                    We continuously focus on creating furniture that
+                    not only looks beautiful but also becomes a part
+                    of your everyday life.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHY CHOOSE US
+    ====================================================== -->
+
+    <section class="why-us">
+
+        <div class="section-title">
+
+            <span>
+                WHY LUXECRAFT
+            </span>
+
+            <h2>
+                Why Choose Us?
+            </h2>
+
+            <p>
+                Quality, comfort and style in every piece.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-couch"></i>
+
+                </div>
+
+                <h3>
+                    Premium Comfort
+                </h3>
+
+                <p>
+                    Every sofa is designed to provide exceptional
+                    comfort for your everyday relaxation.
+                </p>
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-gem"></i>
+
+                </div>
+
+                <h3>
+                    Premium Quality
+                </h3>
+
+                <p>
+                    We carefully select quality materials to create
+                    furniture that lasts for years.
+                </p>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-palette"></i>
+
+                </div>
+
+                <h3>
+                    Elegant Designs
+                </h3>
+
+                <p>
+                    Modern and timeless designs that complement
+                    different interior styles.
+                </p>
+
+            </div>
+
+
+
+            <!-- CARD 4 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+
+                </div>
+
+                <h3>
+                    Reliable Delivery
+                </h3>
+
+                <p>
+                    We make sure your furniture reaches you safely
+                    and conveniently.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MISSION & VISION
+    ====================================================== -->
+
+    <section class="mission">
+
+        <div class="mission-container">
+
+
+            <!-- MISSION -->
+
+            <div class="mission-card">
+
+                <div class="mission-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Our Mission
+                    </h3>
+
+                    <p>
+                        Our mission is to create beautifully crafted
+                        furniture that makes premium comfort accessible
+                        to every home.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- VISION -->
+
+            <div class="mission-card">
+
+                <div class="mission-icon">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Our Vision
+                    </h3>
+
+                    <p>
+                        Our vision is to become a trusted furniture
+                        brand known for quality, innovation and
+                        customer satisfaction.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         QUALITY SECTION
+    ====================================================== -->
+
+    <section class="quality">
+
+        <div class="quality-container">
+
+            <div class="quality-content">
+
+                <span class="section-label">
+                    OUR PROMISE
+                </span>
+
+                <h2>
+                    Quality That You
+                    <span>Can Feel</span>
+                </h2>
+
+                <p>
+                    We pay attention to every detail, from the frame
+                    and cushioning to the fabric and finishing.
+                    Our goal is simple — create furniture that looks
+                    premium and feels even better.
+                </p>
+
+
+                <div class="quality-list">
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Carefully selected materials
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Comfortable cushioning
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Strong and durable construction
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            Modern and timeless designs
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="quality-image">
+
+                <img src="/frontend/assets/images/MainSofaImage.jpg" alt="Quality Sofa">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="about-cta">
+
+        <div class="cta-container">
+
+            <h2>
+                Find Your Perfect Sofa
+            </h2>
+
+            <p>
+                Discover our collection and bring comfort and
+                elegance into your home.
+            </p>
+
+            <button id="shopNowBtn">
+
+                Shop Sofas
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-box footer-about">
+
+                <div class="footer-logo">
+
+                    <div class="logo-icon">
+                        L
+                    </div>
+
+                    <h2>
+                        LuxeCraft
+                    </h2>
+
+                </div>
+
+                <p>
+                    Premium sofas crafted with comfort,
+                    quality and timeless elegance.
+                </p>
+
+                <div class="contact-info">
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Madurai, Tamil Nadu
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        support@luxecraft.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="/frontend/pages/home/index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/products/products.html">
+                            Sofas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/about/about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/contact/contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Customer
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="/frontend/pages/profile/profile.html">
+                            My Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/cart/cart.html">
+                            Cart
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/wishlist/wishlist.html">
+                            Wishlist
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <p>
+                    Stay connected with LuxeCraft.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LuxeCraft. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- COMMON NAV JS -->
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/nav.js"></script>
+
+    <!-- ABOUT JS -->
+
+    <script src="/frontend/pages/about/about.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Details</title>
+    <link rel="stylesheet" href="/frontend/pages/product-details/product-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-right">
+
+                <button class="icon-btn">🔍</button>
+
+                <button class="icon-btn cart">🛒<span class="badge">2</span></button>
+
+                <button class="login-btn">Login</button>
+
+                <button class="signup-btn">Sign Up</button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="breadcrumb">
+
+        <div class="breadcrumb-container">
+
+            <a href="/frontend/pages/home/index.html">Home</a>
+
+            <span>/</span>
+
+            <a href="/frontend/pages/products/products.html">Products</a>
+
+            <span>/</span>
+
+            <span>Products Details</span>
+
+        </div>
+
+    </section>
+
+    <!-- ******************************************************* product details*********************************************************************** -->
+
+    <section class="product-details">
+
+        <div class="product-container">
+
+            <div class="product-gallery">
+
+                <img id="mainImage" class="main-image" src="" alt="Product">
+
+                <!-- <div class="thumbnail-gallery">
+
+                    <img src="/frontend/assets/images/sofa1.jpg">
+
+                    <img src="/frontend/assets/images/sofa1.jpg">
+
+                    <img src="/frontend/assets/images/sofa1.jpg">
+
+                    <img src="/frontend/assets/images/sofa1.jpg">
+
+                </div> -->
+
+            </div>
+
+            <div class="product-info">
+
+                <h1 id="productName">Product Name</h1>
+
+                <!-- <div class="rating">
+                    ⭐⭐⭐⭐⭐ (120 Reviews)
+                </div> -->
+
+                <!-- <div class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐ </span>
+                    <span class="review-count">(120 Reviews)</span>
+                </div> -->
+
+                <div class="price">
+
+                    <!-- <span class="new-price">$899</span> -->
+
+                    <span class="new-price" id="productPrice">₹0</span>
+
+                </div>
+
+                <p class="description" id="productDescription">
+                    Product description
+                </p>
+
+                <div class="product-option">
+
+                    <!-- <h4>Color</h4>
+
+                    <div class="colors">
+
+                        <span class="color beige"></span>
+
+                        <span class="color grey"></span>
+
+                        <span class="color brown active-color"></span>
+
+                    </div> -->
+
+                </div>
+
+                <div class="product-option">
+
+                    <h4>Quantity</h4>
+
+                    <div class="quantity-box">
+
+                        <button id="decreaseBtn">-</button>
+
+                        <span id="quantity">1</span>
+
+                        <button id="increaseBtn">+</button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-buttons">
+
+                    <button class="add-cart" id="addToCartBtn">
+                        Add To Cart
+                    </button>
+
+                    <button class="buy-now" id="buyNowBtn">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ************************************************ describtion********************************************************** -->
+
+    <section class="product-description">
+
+        <div class="description-container">
+
+            <h2>Description</h2>
+
+            <p>
+                Crafted with premium hardwood and high-density foam,
+                this luxury sofa blends timeless design with exceptional
+                comfort. Perfect for modern living rooms, it offers
+                durability, elegance, and superior relaxation.
+            </p>
+
+            <ul>
+
+                <li>Premium Hardwood Frame</li>
+
+                <li>High Density Foam Cushion</li>
+
+                <li>Soft Velvet Fabric</li>
+
+                <li>5 Years Warranty</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ******************************************** specification****************************************************** -->
+
+    <!-- <section class="specifications">
+
+        <h2>Specifications</h2>
+
+        <table>
+
+            <tr>
+                <td>Material</td>
+                <td>Teak Wood</td>
+            </tr>
+
+            <tr>
+                <td>Fabric</td>
+                <td>Velvet</td>
+            </tr>
+
+            <tr>
+                <td>Seating Capacity</td>
+                <td>3 Seater</td>
+            </tr>
+
+            <tr>
+                <td>Warranty</td>
+                <td>5 Years</td>
+            </tr>
+
+            <tr>
+                <td>Delivery</td>
+                <td>5-7 Days</td>
+            </tr>
+
+        </table>
+
+    </section> -->
+
+    <!-- =========================================================
+     CUSTOMER REVIEWS
+========================================================= -->
+
+    <section class="reviews">
+
+        <div class="section-title">
+
+            <h2>Customer Reviews</h2>
+
+            <p>See what our happy customers say.</p>
+
+        </div>
+
+
+        <!-- =====================================================
+         REVIEW SUMMARY
+    ====================================================== -->
+
+        <div class="review-summary">
+
+            <div class="overall-rating">
+
+                <h3>4.8</h3>
+
+                <div class="overall-stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>Based on <span id="reviewCount">120</span> reviews</p>
+
+            </div>
+
+
+            <div class="rating-breakdown">
+
+                <div class="rating-row">
+
+                    <span>5 ⭐</span>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 85%;"></div>
+                    </div>
+
+                    <span>85%</span>
+
+                </div>
+
+
+                <div class="rating-row">
+
+                    <span>4 ⭐</span>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 10%;"></div>
+                    </div>
+
+                    <span>10%</span>
+
+                </div>
+
+
+                <div class="rating-row">
+
+                    <span>3 ⭐</span>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 3%;"></div>
+                    </div>
+
+                    <span>3%</span>
+
+                </div>
+
+
+                <div class="rating-row">
+
+                    <span>2 ⭐</span>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 1%;"></div>
+                    </div>
+
+                    <span>1%</span>
+
+                </div>
+
+
+                <div class="rating-row">
+
+                    <span>1 ⭐</span>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 1%;"></div>
+                    </div>
+
+                    <span>1%</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+         WRITE REVIEW
+    ====================================================== -->
+
+        <div class="write-review">
+
+            <h3>Write a Review</h3>
+
+            <p>Share your experience with this product.</p>
+
+
+            <!-- Rating -->
+
+            <div class="review-rating">
+
+                <label>Your Rating</label>
+
+                <div class="star-input" id="starInput">
+
+                    <span data-rating="1">★</span>
+
+                    <span data-rating="2">★</span>
+
+                    <span data-rating="3">★</span>
+
+                    <span data-rating="4">★</span>
+
+                    <span data-rating="5">★</span>
+
+                </div>
+
+                <input type="hidden" id="selectedRating" value="0">
+
+            </div>
+
+
+            <!-- Review Text -->
+
+            <div class="review-input">
+
+                <label for="reviewText">
+                    Your Review
+                </label>
+
+                <textarea id="reviewText" rows="5" placeholder="Write your review here..."></textarea>
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button type="button" class="submit-review" id="submitReviewBtn">
+
+                Submit Review
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+         EXISTING REVIEWS
+    ====================================================== -->
+
+        <div class="customer-reviews">
+
+            <h3>What Our Customers Say</h3>
+
+
+            <div class="review-grid" id="reviewGrid">
+
+
+                <!-- Review 1 -->
+
+                <div class="review-card">
+
+                    <div class="review-header">
+
+                        <div class="review-user">
+
+                            <div class="user-avatar">
+                                J
+                            </div>
+
+                            <div>
+
+                                <h4>John Smith</h4>
+
+                                <span class="review-date">
+                                    10 Aug 2026
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="review-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Excellent sofa! The quality is outstanding
+                        and delivery was very fast. Highly recommended.
+                    </p>
+
+                </div>
+
+
+                <!-- Review 2 -->
+
+                <div class="review-card">
+
+                    <div class="review-header">
+
+                        <div class="review-user">
+
+                            <div class="user-avatar">
+                                D
+                            </div>
+
+                            <div>
+
+                                <h4>David Miller</h4>
+
+                                <span class="review-date">
+                                    08 Aug 2026
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="review-stars">
+                            ⭐⭐⭐⭐☆
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Comfortable and stylish.
+                        Perfect for my living room.
+                    </p>
+
+                </div>
+
+
+                <!-- Review 3 -->
+
+                <div class="review-card">
+
+                    <div class="review-header">
+
+                        <div class="review-user">
+
+                            <div class="user-avatar">
+                                E
+                            </div>
+
+                            <div>
+
+                                <h4>Emma Wilson</h4>
+
+                                <span class="review-date">
+                                    05 Aug 2026
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="review-stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Premium finish and amazing comfort.
+                        Worth every penny.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ***************************************************related products************************************************************ -->
+
+    <section class="products">
+
+        <div class="section-title">
+            <h2>You May Also Like</h2>
+            <p>Discover more luxury sofas you'll love.</p>
+        </div>
+
+        <div class="product-grid" id="relatedProducts"></div>
+
+    </section>
+
+    <!-- ****************************************** footer****************************************************** -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>LuxeCraft</h2>
+
+                <p>
+                    Premium handcrafted sofas designed
+                    for luxury living.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="/frontend/pages/home/index.html">Home</a>
+
+                <a href="/frontend/pages/products/products.html">Products</a>
+
+                <a href="/frontend/pages/about/about.html">About</a>
+
+                <a href="/frontend/pages/contact/contact.html">Contact</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Customer Care</h3>
+
+                <a href="#">Shipping</a>
+
+                <a href="#">Returns</a>
+
+                <a href="#">FAQ</a>
+
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 LuxeCraft. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/product-details/product-details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeCraft Admin Dashboard</title>
+
+    <link rel="stylesheet" href="/frontend/pages/dashboard/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <aside class="sidebar" id="adminSidebar"></aside>
+
+        <!-- ******************************************************************************************************* -->
+
+        <main class="main-content">
+
+            <header class="top-header">
+
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back, <span id="adminName">Admin</span> 👋</p>
+                </div>
+
+                <div class="header-right">
+
+                    <span>27 July 2026</span>
+
+                    <!-- <i class="fa-solid fa-bell"></i> -->
+
+                    <div class="admin-profile">
+                        <a href="/frontend/pages/admin-settings/admin-settings.html">
+                                
+                        <i class="fa-solid fa-user"></i>
+                        <span id="adminProfileName">Admin</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- *************************************************************************************************** -->
+
+            <section class="dashboard-cards">
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Products</h3>
+                        <p id="productCount">0</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Orders</h3>
+                        <p id="orderCount">0</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Customers</h3>
+                        <p id="customerCount">0</p>
+                    </div>
+                </div>
+
+                <div class="card revenue-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Revenue</h3>
+                        <p id="revenueAmount">₹0</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ******************************************************************************************* -->
+
+            <section class="recent-orders">
+
+                <div class="section-header">
+
+                    <h2>Recent Orders</h2>
+
+                    <a href="/frontend/pages/admin-orders/admin-orders.html">View All</a>
+
+                </div>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="recentOrdersBody">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/admin-nav.js"></script>
+    <script src="/frontend/pages/dashboard/dashboard.js"></script>
+
+</body>
+
+</html>

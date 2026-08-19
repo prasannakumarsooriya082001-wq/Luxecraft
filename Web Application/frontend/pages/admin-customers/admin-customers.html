@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customers Management</title>
+
+    <link rel="stylesheet" href="/frontend/pages/admin-customers/admin-customers.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar" id="adminSidebar"></aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <div class="top-header">
+
+                <div>
+
+                    <h1>Customers Management</h1>
+
+                    <p>Manage all registered customers.</p>
+
+                </div>
+
+                <!-- <button class="add-btn" id="addCustomer">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Add Customer
+
+                </button> -->
+
+            </div>
+
+            <!-- Toolbar -->
+
+            <div class="toolbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" id="search" placeholder="Search Customer">
+
+                </div>
+
+                <div class="category-wrapper">
+                    <select class="category-filter" id="statusFilter">
+                        <option value="all">All Customers</option>
+                        <option value="active">Active</option>
+
+                        <option value="inactive">Inactive</option>
+
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+            <!-- Table -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <!-- <th>Image</th> -->
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Phone</th>
+
+                            <th>Orders</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="customerTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/admin-nav.js"></script>
+    <script src="/frontend/pages/admin-customers/admin-customers.js"></script>
+
+</body>
+
+</html>

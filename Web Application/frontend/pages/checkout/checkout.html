@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="/frontend/pages/checkout/checkout.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="nav-right">
+
+                <!-- CART -->
+
+                <button class="icon-btn1 cart1" id="cartButton">
+
+                    🛒
+
+                    <span class="badge" id="cartBadge">
+                        0
+                    </span>
+
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <button class="login-btn1" id="loginButton">
+
+                    Login
+
+                </button>
+
+
+                <!-- SIGN UP -->
+
+                <button class="signup-btn1" id="signupButton">
+
+                    Sign Up
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button class="profile-btn1" id="profileButton" style="display:none;">
+
+                    <span id="profileName">Profile</span>
+
+                </button>
+
+
+                <!-- LOGOUT -->
+
+                <button class="logout-btn1" id="logoutButton" style="display:none;">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="breadcrumb">
+
+        <div class="breadcrumb-container">
+
+            <a href="/frontend/pages/home/index.html">Home</a>
+
+            <span>/</span>
+
+            <a href="/frontend/pages/cart/cart.html">Cart</a>
+
+            <span>/</span>
+
+            <span>Checkout</span>
+
+        </div>
+
+    </section>
+
+    <section class="checkout-section">
+
+        <div class="checkout-container">
+
+            <div class="checkout-form">
+
+                <h2>Billing Details</h2>
+
+                <form id="checkoutForm">
+
+                    <div class="row">
+
+                        <div class="input-box">
+
+                            <label>First Name</label>
+
+                            <input type="text" id="firstName" placeholder="Enter First Name" required>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>Last Name</label>
+
+                            <input type="text" id="lastName" placeholder="Enter Last Name" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Email Address</label>
+
+                        <input type="email" id="email" placeholder="Enter Email" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Phone Number</label>
+
+                        <input type="tel" id="phone" placeholder="Enter Phone Number" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Street Address</label>
+
+                        <input type="text" id="streetAddress" placeholder="Enter Address" required>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="input-box">
+
+                            <label>City</label>
+
+                            <input type="text" id="city" placeholder="City">
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>State</label>
+
+                            <input type="text" id="state" placeholder="State">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="input-box">
+
+                            <label>ZIP Code</label>
+
+                            <input type="text" id="zipCode" placeholder="ZIP Code">
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>Country</label>
+
+                            <input type="text" id="country" placeholder="Country">
+
+                        </div>
+
+                    </div>
+
+                    <div class="payment">
+
+                        <h2>Payment Method</h2>
+
+                        <label>
+
+                            <input type="radio" name="payment" value="CARD">
+
+                            Credit / Debit Card
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio" value="Net Banking" name="payment">
+
+                            Net Banking
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio" value="COD" name="payment">
+
+                            Cash On Delivery
+
+                        </label>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkoutItems"></div>
+
+                <hr>
+
+                <div class="price-row">
+                    <span>Subtotal</span>
+                    <span id="checkoutSubtotal">₹0</span>
+                </div>
+
+                <div class="price-row">
+                    <span>Shipping</span>
+                    <span id="checkoutShipping">Free</span>
+                </div>
+
+                <div class="price-row">
+                    <span>Tax (5%)</span>
+                    <span id="checkoutTax">₹0</span>
+                </div>
+
+                <div class="price-row">
+                    <span id="discountLabel">Discount</span>
+                    <span id="checkoutDiscount">₹0</span>
+                </div>
+
+                <div class="coupon-box">
+
+                    <div class="coupon-row">
+
+                        <input type="text"
+                               id="couponInput"
+                               placeholder="Coupon code"
+                               autocomplete="off">
+
+                        <button type="button" id="applyCouponBtn">Apply</button>
+
+                    </div>
+
+                    <p class="coupon-message" id="couponMessage"></p>
+
+                </div>
+
+                <hr>
+
+                <div class="price-row total">
+                    <span>Total</span>
+                    <span id="checkoutTotal">₹0</span>
+                </div>
+
+                <button class="place-order">
+
+                    Place Order
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+
+
+    </footer>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/nav.js"></script>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script src="/frontend/pages/checkout/checkout.js"></script>
+
+</body>
+
+</html>

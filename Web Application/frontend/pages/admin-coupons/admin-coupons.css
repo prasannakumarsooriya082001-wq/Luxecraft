@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F5F6FA;
+    color:#2B2420;
+}
+
+.admin-container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ================= Sidebar ================= */
+
+.sidebar{
+    width:270px;
+    background:#A6572E;
+    color:white;
+    padding:30px 20px;
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:45px;
+}
+
+.logo-icon{
+    width:45px;
+    height:45px;
+    background:#723a19;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.sidebar-logo h2{
+    font-size:30px;
+}
+
+.sidebar-menu{
+    list-style:none;
+}
+
+.sidebar-menu li{
+    margin-bottom:12px;
+}
+
+.sidebar-menu li a{
+    text-decoration:none;
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li.active a{
+    background: #723a19;
+}
+
+/* ================= Main ================= */
+
+.main-content{
+    flex:1;
+    padding:35px;
+}
+
+.top-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.top-header h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.top-header p{
+    color:#777;
+}
+
+/* ================= Button ================= */
+
+.add-category-btn,
+.add-coupon-btn{
+    background:#A6572E;
+    color:white;
+    border:none;
+    padding:14px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.add-category-btn:hover,
+.add-coupon-btn:hover{
+    background:#7C3E1D;
+}
+
+.add-category-btn i,
+.add-coupon-btn i{
+    margin-right:8px;
+}
+
+/* ================= Toolbar ================= */
+
+.toolbar{
+    margin-bottom:30px;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+    background:white;
+    padding:14px 18px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.search-box i{
+    margin-right:10px;
+    color:#777;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+.search-box:focus-within{
+    border:2px solid #A6572E;
+}
+
+/* ================= Table ================= */
+
+.table-wrapper{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#A6572E;
+    color:white;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:left;
+}
+
+tbody tr{
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#F9F9F9;
+}
+
+td{
+    border-bottom:1px solid #eee;
+}
+
+/* ================= Buttons ================= */
+
+.edit-btn,
+.delete-btn{
+
+    width:40px;
+    height:40px;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    border-radius:8px;
+
+    text-decoration:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-right:8px;
+
+}
+
+.edit-btn{
+
+    background:#3498DB;
+
+}
+
+.edit-btn:hover{
+
+    background:#2874A6;
+
+    transform:scale(1.08);
+
+}
+
+.delete-btn{
+
+    background:#DC3545;
+
+}
+
+.delete-btn:hover{
+
+    background:#B02A37;
+
+    transform:scale(1.08);
+
+}
+
+
+.status-active{
+
+    background:#d1fae5;
+    color:#065f46;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.status-inactive{
+
+    background:#fee2e2;
+    color:#991b1b;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+
+
+
+/* ================= COUPON FORM PANEL ================= */
+
+.coupon-form-panel {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin-bottom: 24px;
+}
+
+.coupon-form-panel h2 {
+    margin: 0 0 18px;
+    font-size: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+}
+
+.field input,
+.field select {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+.field input:focus,
+.field select:focus {
+    outline: none;
+    border-color: #222;
+}
+
+.field small {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #888;
+}
+
+.checkbox-field label {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 26px;
+    font-size: 14px;
+}
+
+.checkbox-field input {
+    width: auto;
+}
+
+.form-message {
+    margin: 16px 0 0;
+    font-size: 13px;
+    min-height: 18px;
+}
+
+.form-message.error {
+    color: #b3261e;
+}
+
+.form-message.success {
+    color: #1b5e20;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.save-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+    color: #fff;
+    background: #222;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.save-btn:hover:not(:disabled) {
+    background: #000;
+}
+
+.save-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.cancel-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+    color: #444;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: #f5f5f5;
+}
+
+
+/* ================= TABLE BITS ================= */
+
+.code-cell {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.validity {
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.status-tag.live {
+    color: #1b5e20;
+    background: #e8f5e9;
+}
+
+.status-tag.scheduled {
+    color: #0c447c;
+    background: #e6f1fb;
+}
+
+.status-tag.expired {
+    color: #8a5300;
+    background: #fff4e0;
+}
+
+.status-tag.inactive {
+    color: #5f5e5a;
+    background: #f1efe8;
+}
+
+.toggle-btn {
+    padding: 7px 10px;
+    color: #444;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background: #f5f5f5;
+}
+
+.empty-state {
+    padding: 28px 0;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}

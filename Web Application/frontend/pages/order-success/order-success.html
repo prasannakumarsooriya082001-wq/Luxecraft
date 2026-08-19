@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Success</title>
+
+    <link rel="stylesheet" href="/frontend/pages/order-success/order-success.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="nav-right">
+
+                <!-- CART -->
+
+                <button class="icon-btn1 cart1" id="cartButton">
+
+                    🛒
+
+                    <span class="badge" id="cartBadge">
+                        0
+                    </span>
+
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <button class="login-btn1" id="loginButton">
+
+                    Login
+
+                </button>
+
+
+                <!-- SIGN UP -->
+
+                <button class="signup-btn1" id="signupButton">
+
+                    Sign Up
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button class="profile-btn1" id="profileButton" style="display:none;">
+
+                     <span id="profileName">Profile</span>
+
+                </button>
+
+
+                <!-- LOGOUT -->
+
+                <button class="logout-btn1" id="logoutButton" style="display:none;">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Success Section -->
+
+    <section class="success-section">
+
+        <div class="success-card">
+
+            <div class="success-icon">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <h1>Order Placed Successfully!</h1>
+
+            <p>
+
+                Thank you for shopping with <strong>LuxeCraft</strong>.
+
+                Your order has been confirmed successfully.
+
+            </p>
+
+            <div class="order-info">
+
+                <div>
+
+                    <span>Order ID</span>
+
+                    <h3 id="orderId">Loading...</h3>
+
+                </div>
+
+                <div>
+
+                    <span>Estimated Delivery</span>
+
+                    <h3>3 - 5 Business Days</h3>
+
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <a href="/frontend/pages/products/products.html" class="shop-btn">
+
+                    Continue Shopping
+
+                </a>
+
+                <a href="/frontend/pages/orders/order.html" class="order-btn">
+
+                    View Orders
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/nav.js"></script>
+
+    <script src="/frontend/pages/order-success/order-success.js"></script>
+
+</body>
+
+</html>

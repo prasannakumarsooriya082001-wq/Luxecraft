@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F5F6FA;
+    color: #2B2420;
+}
+
+/* ===================================
+        Layout
+=================================== */
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 35px;
+}
+
+/* ===================================
+        Sidebar
+=================================== */
+
+.sidebar {
+    width: 270px;
+    background: #A6572E;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background: #723a19;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sidebar-logo h2 {
+    font-size: 30px;
+}
+
+.sidebar-menu {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    margin-bottom: 12px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li.active a {
+    background:   #723a19;
+}
+
+/* ===================================
+        Header
+=================================== */
+
+.top-header {
+    margin-bottom: 35px;
+}
+
+.top-header h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.top-header p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* ===================================
+        Cards
+=================================== */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #A6572E;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* ===================================
+        Input Groups
+=================================== */
+
+.input-group {
+
+    margin-bottom: 22px;
+
+}
+
+.input-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #555;
+
+}
+
+.input-group input,
+.input-group select {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #DDD;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+
+    background: white;
+
+}
+
+.input-group input:focus,
+.input-group select:focus {
+
+    border-color: #A6572E;
+
+    box-shadow: 0 0 8px rgba(166, 87, 46, .25);
+
+}
+
+/* ===================================
+        Password Box
+=================================== */
+
+.password-box {
+
+    position: relative;
+
+}
+
+.password-box input {
+
+    width: 100%;
+
+    padding-right: 50px;
+
+}
+
+.password-box i {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 18px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    color: #888;
+
+    transition: .3s;
+
+}
+
+.password-box i:hover {
+
+    color: #A6572E;
+
+}
+
+/* ===================================
+        Buttons
+=================================== */
+
+button {
+
+    background: #A6572E;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 24px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+button:hover {
+
+    background: #7C3E1D;
+
+    transform: translateY(-2px);
+
+}
+
+button i {
+
+    margin-right: 8px;
+
+}
+
+
+
+
+/* ===================================
+        Save Settings Card
+=================================== */
+
+#saveSettingsBtn {
+
+    margin-top: 10px;
+
+    width: 220px;
+
+}

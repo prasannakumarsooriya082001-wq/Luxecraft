@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Details</title>
+
+    <link rel="stylesheet" href="/frontend/pages/admin-customer-details/admin-customer-details.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>Customer Details</h1>
+
+            <a href="/frontend/pages/admin-customers/admin-customers.html" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Customers
+
+            </a>
+
+        </header>
+
+        <!-- Customer Information -->
+
+        <div class="card">
+
+            <div class="profile-section">
+
+                <div>
+
+                    <h2 id="customerName">Customer Name</h2>
+
+                    <p id="customerRole">Customer</p>
+
+                </div>
+
+            </div>
+
+            <div class="details-grid">
+
+                <div>
+
+                    <strong>Email</strong>
+
+                    <p id="customerEmail">-</p>
+
+                </div>
+
+                <div>
+
+                    <strong>Phone</strong>
+
+                    <p id="customerPhone">-</p>
+
+                </div>
+
+                <div>
+
+                    <strong>Address</strong>
+
+                    <p id="customerAddress">
+                        Address not available
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <strong>Status</strong>
+
+                    <span id="customerStatus" class="status active">
+                        Active
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Order History -->
+
+        <div class="card">
+
+            <h2>Order History</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Order ID</th>
+
+                            <th>Date</th>
+
+                            <th>Amount</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="orderTableBody">
+
+                        <tr>
+
+                            <td colspan="4" style="text-align:center;">
+                                Loading orders...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- Summary -->
+
+        <div class="card">
+
+            <h2>Customer Summary</h2>
+
+            <div class="summary-grid">
+
+                <div class="summary-box">
+
+                    <h3>Total Orders</h3>
+
+                    <p id="totalOrders">0</p>
+
+                </div>
+
+                <div class="summary-box">
+
+                    <h3>Total Purchase</h3>
+
+                    <p id="totalPurchase">₹0</p>
+
+                </div>
+
+                <div class="summary-box">
+
+                    <h3>Last Order</h3>
+
+                    <p id="lastOrder">-</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/admin-customer-details/admin-customer-details.js"></script>
+
+</body>
+
+</html>

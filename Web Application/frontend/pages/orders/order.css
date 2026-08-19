@@ -1,0 +1,832 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F6F3EE;
+    color: #2B2420;
+}
+
+.navbar {
+    width: 100%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #E7E1D8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    background: #A6572E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #A6572E;
+    transition: .3s;
+
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #A6572E;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* .icon-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #F6F3EE;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icon-btn:hover {
+    background: #A6572E;
+    color: white;
+} */
+
+.cart {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* .login-btn {
+    padding: 10px 18px;
+    background: white;
+    border: 1px solid #A6572E;
+    color: #A6572E;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #A6572E;
+    color: white;
+}
+
+.signup-btn {
+    padding: 10px 18px;
+    background: #A6572E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: #7C3E1D;
+} */
+
+/* =====================================================
+   NAV RIGHT
+===================================================== */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =====================================================
+   CART BUTTON
+===================================================== */
+
+.icon-btn1 {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    background: #F6F3EE;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+
+    transition: 0.3s;
+}
+
+
+.icon-btn1:hover {
+    background: #A6572E;
+    color: white;
+}
+
+
+/* =====================================================
+   CART BADGE
+===================================================== */
+
+.cart1 {
+    position: relative;
+}
+
+
+.badge {
+    position: absolute;
+
+    top: -4px;
+    right: -4px;
+
+    background: #E53935;
+
+    color: white;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.login-btn1 {
+    padding: 10px 18px;
+
+    background: white;
+
+    border: 1px solid #A6572E;
+
+    color: #A6572E;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.login-btn1:hover {
+    background: #A6572E;
+    color: white;
+}
+
+
+/* =====================================================
+   SIGN UP BUTTON
+===================================================== */
+
+.signup-btn1 {
+    padding: 10px 18px;
+
+    background: #A6572E;
+
+    color: white;
+
+    border: 1px solid #A6572E;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.signup-btn1:hover {
+    background: #7C3E1D;
+    border-color: #7C3E1D;
+}
+
+
+/* =====================================================
+   PROFILE BUTTON
+===================================================== */
+
+.profile-btn1 {
+    padding: 10px 18px;
+
+    background: white;
+
+    color: #A6572E;
+
+    border: 1px solid #A6572E;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.profile-btn1:hover {
+    background: #A6572E;
+    color: white;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+===================================================== */
+
+.logout-btn1 {
+    padding: 10px 18px;
+
+    background: #A6572E;
+
+    color: white;
+
+    border: 1px solid #A6572E;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.logout-btn1:hover {
+    background: #7C3E1D;
+    border-color: #7C3E1D;
+}
+
+/* ****************************************************************************************** */
+
+
+
+.breadcrumb {
+    background: #EFE8DD;
+    padding: 18px 0;
+}
+
+.breadcrumb-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #A6572E;
+}
+
+.breadcrumb span {
+    margin: 0 8px;
+}
+
+
+
+.orders-title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.orders-title h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.orders-title p {
+    color: #777;
+    font-size: 18px;
+}
+
+
+
+.orders-section {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.order-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.order-card img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.order-details {
+    flex: 1;
+}
+
+.order-details h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.order-details p {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+
+.status {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.delivered {
+    background: #28A745;
+}
+
+.processing {
+    background: #F39C12;
+}
+
+.shipped {
+    background: #3498DB;
+}
+
+.cancelled {
+    background: #E74C3C;
+}
+
+.order-price {
+    text-align: right;
+}
+
+.order-price h3 {
+    color: #A6572E;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.details-btn {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #A6572E;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.details-btn:hover {
+    background: #7C3E1D;
+}
+
+
+.orders-section {
+    padding: 50px 7%;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.order-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.order-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 180px;
+}
+
+.order-header span,
+.order-details span {
+    color: #777;
+    font-size: 14px;
+}
+
+.order-header h3 {
+    margin: 5px 0 0;
+}
+
+.order-details {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.order-details p {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.order-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #b35c2e;
+    color: white;
+    cursor: pointer;
+}
+
+.order-card button:hover {
+    background: #8f4521;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #E7E1D8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+
+    background: #A6572E;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* =====================================================
+   NAV LINKS
+===================================================== */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+
+    font-weight: 500;
+
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background: #A6572E;
+
+    transition: .3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #A6572E;
+}
+
+/* =====================================================
+   NAV RIGHT
+===================================================== */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* =====================================================
+   CART BUTTON
+===================================================== */
+
+.icon-btn1 {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background: #F6F3EE;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    position: relative;
+
+    transition: .3s;
+}
+
+.icon-btn1:hover {
+    background: #A6572E;
+    color: white;
+}
+
+/* =====================================================
+   CART BADGE
+===================================================== */
+
+.cart1 {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+
+    background: red;
+    color: white;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.login-btn1 {
+    padding: 10px 18px;
+
+    background: white;
+
+    border: 1px solid #A6572E;
+
+    color: #A6572E;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: .3s;
+}
+
+.login-btn1:hover {
+    background: #A6572E;
+    color: white;
+}
+
+/* =====================================================
+   SIGN UP BUTTON
+===================================================== */
+
+.signup-btn1 {
+    padding: 10px 18px;
+
+    background: #A6572E;
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: .3s;
+}
+
+.signup-btn1:hover {
+    background: #7C3E1D;
+}
+
+/* =====================================================
+   PROFILE BUTTON
+===================================================== */
+
+.profile-btn1 {
+    padding: 10px 18px;
+
+    background: white;
+
+    border: 1px solid #A6572E;
+
+    color: #A6572E;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: .3s;
+}
+
+.profile-btn1:hover {
+    background: #A6572E;
+    color: white;
+}
+
+/* =====================================================
+   LOGOUT BUTTON
+===================================================== */
+
+.logout-btn1 {
+    padding: 10px 18px;
+
+    background: #A6572E;
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: .3s;
+}
+
+.logout-btn1:hover {
+    background: #7C3E1D;
+}

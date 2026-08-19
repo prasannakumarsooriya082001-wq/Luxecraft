@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/frontend/pages/register/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-right">
+
+                <button class="icon-btn">🔍</button>
+
+                <button class="icon-btn cart">🛒<span class="badge">2</span></button>
+
+                <button class="login-btn">Login</button>
+
+                <button class="signup-btn">Sign Up</button>
+
+            </div>
+
+        </div>
+
+    </header> -->
+    <!-- *********************************************** register page********************************************************* -->
+
+    <section class="register-section">
+
+        <div class="register-container">
+
+            <div class="register-image">
+
+                <img src="/frontend/assets/images/sofa1.jpg" alt="Luxury Sofa">
+
+                <div class="overlay">
+
+                    <h2>Create Your Dream Home</h2>
+
+                    <p>Join LuxeCraft and discover premium handcrafted furniture.</p>
+
+                </div>
+
+            </div>
+
+            <div class="register-form">
+
+                <a href="/frontend/pages/home/index.html" class="back-home">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Home
+                </a>
+
+                <h2>Create Account</h2>
+
+                <p>Join LuxeCraft today.</p>
+
+                <form id="registerForm">
+
+                    <div class="name-row">
+
+                        <div class="input-group">
+                            <label>First Name</label>
+                            <input type="text" class="form-input" id="firstName">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input type="text" class="form-input" id="lastName">
+                        </div>
+
+                    </div>
+
+                    <label>Email Address</label>
+
+                    <input type="email" class="form-input" id="email" placeholder="Enter your email">
+
+                    <label>Phone Number</label>
+
+                    <input type="tel" class="form-input" id="phone" placeholder="Enter your phone number">
+
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input type="password" class="form-input" id="password" placeholder="Create password">
+
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
+
+                    </div>
+
+                    <label>Confirm Password</label>
+
+                    <div class="password-box">
+
+                        <input type="password" class="form-input" id="confirmPassword" placeholder="Confirm password">
+
+                        <i class="fa-solid fa-eye" id="toggleConfirmPassword"></i>
+
+                    </div>
+
+                    <button type="submit" class="register-btn">Create Account</button>
+
+                </form>
+
+                <p class="login-link">
+
+                    Already have an account?
+
+                    <a href="/frontend/pages/login/login.html">Login</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/register/register.js"></script>
+
+</body>
+
+</html>

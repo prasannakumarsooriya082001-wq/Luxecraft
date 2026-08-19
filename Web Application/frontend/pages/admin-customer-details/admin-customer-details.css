@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F5F6FA;
+    color:#2B2420;
+}
+
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* =======================================
+                Header
+======================================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:32px;
+}
+
+.back-btn{
+    text-decoration:none;
+    background:#A6572E;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#7C3E1D;
+}
+
+.back-btn i{
+    margin-right:8px;
+}
+
+/* =======================================
+                Card
+======================================= */
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#A6572E;
+    margin-bottom:20px;
+}
+
+/* =======================================
+            Profile
+======================================= */
+
+.profile-section{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.profile-image{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #A6572E;
+}
+
+.profile-section h2{
+    margin-bottom:8px;
+}
+
+.profile-section p{
+    color:#777;
+}
+
+/* =======================================
+            Details
+======================================= */
+
+.details-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.details-grid strong{
+    display:block;
+    margin-bottom:8px;
+    color:#555;
+}
+
+.details-grid p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* =======================================
+            Status
+======================================= */
+
+.status{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+    color:white;
+}
+
+.active{
+    background:#28A745;
+}
+
+.inactive{
+    background:#DC3545;
+}
+
+/* =======================================
+            Table
+======================================= */
+
+.table-wrapper{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#A6572E;
+    color:white;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:left;
+}
+
+tbody tr{
+    border-bottom:1px solid #eee;
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#F9F9F9;
+}
+
+/* =======================================
+        Order Status
+======================================= */
+
+.delivered,
+.processing,
+.pending{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    color:white;
+    font-weight:bold;
+}
+
+.delivered{
+    background:#28A745;
+}
+
+.processing{
+    background:#3498DB;
+}
+
+.pending{
+    background:#F39C12;
+}
+
+/* =======================================
+            Summary
+======================================= */
+
+.summary-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.summary-box{
+    background:#F8F8F8;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+}
+
+.summary-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.summary-box h3{
+    margin-bottom:15px;
+    color:#555;
+}
+
+.summary-box p{
+    font-size:28px;
+    color:#A6572E;
+    font-weight:bold;
+}
+

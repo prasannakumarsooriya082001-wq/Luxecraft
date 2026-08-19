@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports</title>
+
+    <link rel="stylesheet" href="/frontend/pages/admin-reports/admin-reports.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar" id="adminSidebar"></aside>
+
+
+        <!-- =====================================================
+             MAIN CONTENT
+        ====================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+
+            <div class="top-header">
+
+                <div>
+
+                    <h1>
+                        Reports Dashboard
+                    </h1>
+
+                    <p>
+                        Sales & Business Analytics
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 STATISTICS
+            ================================================== -->
+
+            <section class="statistics">
+
+
+                <!-- TOTAL REVENUE -->
+
+                <div class="card">
+
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    <h4>
+                        Total Revenue
+                    </h4>
+
+                    <h2 id="revenue">
+                        ₹0
+                    </h2>
+
+                </div>
+
+
+                <!-- TOTAL ORDERS -->
+
+                <div class="card">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <h4>
+                        Total Orders
+                    </h4>
+
+                    <h2 id="orders">
+                        0
+                    </h2>
+
+                </div>
+
+
+                <!-- TOTAL CUSTOMERS -->
+
+                <div class="card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h4>
+                        Customers
+                    </h4>
+
+                    <h2 id="customers">
+                        0
+                    </h2>
+
+                </div>
+
+
+                <!-- PRODUCTS SOLD -->
+
+                <div class="card">
+
+                    <i class="fa-solid fa-box"></i>
+
+                    <h4>
+                        Products Sold
+                    </h4>
+
+                    <h2 id="products">
+                        0
+                    </h2>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 REVENUE CHART
+            ================================================== -->
+
+            <section class="charts-container">
+
+                <div class="chart-card">
+
+                    <div class="chart-header">
+                        <h2>Revenue Trend</h2>
+                        <p>Monthly Revenue Overview</p>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SMALL CHARTS
+            ================================================== -->
+
+            <!-- <section class="small-charts">
+
+
+                
+
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h2>
+                            Sales by Category
+                        </h2>
+
+                        <p>
+                            Products Sold
+                        </p>
+
+                    </div>
+
+                    <canvas id="categoryChart"></canvas>
+
+                </div>
+
+
+                
+
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h2>
+                            Order Status
+                        </h2>
+
+                        <p>
+                            Current Orders
+                        </p>
+
+                    </div>
+
+                    <canvas id="statusChart"></canvas>
+
+                </div> 
+
+            </section>-->
+
+
+            <!-- =================================================
+                 TOOLBAR
+            ================================================== -->
+
+            <section class="toolbar">
+
+                <input type="date" id="fromDate">
+
+                <input type="date" id="toDate">
+
+
+                <button id="filterBtn">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    Filter
+
+                </button>
+
+
+                <button id="printBtn">
+
+                    <i class="fa-solid fa-print"></i>
+
+                    Print
+
+                </button>
+
+
+                <button id="exportBtn">
+
+                    <i class="fa-solid fa-file-export"></i>
+
+                    Export
+
+                </button>
+
+            </section>
+
+
+            <!-- =================================================
+                 SALES TABLE
+            ================================================== -->
+
+            <section class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Date
+                            </th>
+
+                            <th>
+                                Order ID
+                            </th>
+
+                            <th>
+                                Customer
+                            </th>
+
+                            <th>
+                                Category
+                            </th>
+
+                            <th>
+                                Amount
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="reportTableBody">
+
+                        <tr>
+
+                            <td colspan="6" style="text-align:center;">
+
+                                Loading reports...
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/admin-nav.js"></script>
+    <script src="/frontend/pages/admin-reports/admin-reports.js"></script>
+
+</body>
+
+</html>

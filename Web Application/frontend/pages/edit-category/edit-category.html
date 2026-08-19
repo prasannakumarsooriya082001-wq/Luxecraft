@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Category</title>
+
+    <link rel="stylesheet" href="/frontend/pages/edit-category/edit-category.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>Edit Category</h1>
+
+            <a href="/frontend/pages/admin-categories/admin-categories.html" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Categories
+
+            </a>
+
+        </header>
+
+        <form id="updateCategoryForm" class="card">
+
+            <!-- Category Name -->
+
+            <div class="form-group">
+
+                <label>Category Name</label>
+
+                <input type="text" id="categoryName"  required>
+
+            </div>
+
+            
+            <!-- Description -->
+
+            <div class="form-group">
+
+                <label>Description</label>
+
+                <textarea id="description" rows="5" required></textarea>
+
+            </div>
+
+
+            <!-- Status -->
+
+            <div class="form-group">
+
+                <label>Status</label>
+
+                <select id="status">
+
+                    <option value="Active">Active</option>
+
+                    <option value="Inactive">Inactive</option>
+
+                </select>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="button-group">
+
+                <button type="submit" class="update-btn">
+
+                    <i class="fa-solid fa-pen-to-square"></i>
+
+                    Update Category
+
+                </button>
+
+                <button type="button" class="cancel-btn">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                    Cancel
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/edit-category/edit-category.js"></script>
+
+</body>
+
+</html>

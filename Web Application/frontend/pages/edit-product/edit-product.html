@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Product | LuxeCraft Admin</title>
+
+    <link rel="stylesheet" href="/frontend/pages/edit-product/edit-product.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <aside class="sidebar" id="adminSidebar"></aside>
+
+        <!-- ******************************************************************************* -->
+
+        <main class="main-content">
+
+            <div class="page-header">
+
+                <div>
+
+                    <h1>Edit Product</h1>
+
+                    <p>Update your product details.</p>
+
+                </div>
+
+                <a href="/frontend/pages/admin-products/admin-products.html" class="back-btn">
+
+                    <i class="fa-solid fa-arrow-left"></i>Back to Products
+
+                </a>
+
+            </div>
+
+            <form class="product-form" id="productForm">
+
+                <div class="form-group full-width">
+
+                    <label>Product Image</label>
+
+                    <div class="image-upload">
+
+                        <img src="/frontend/assets/images/upload-placeholder.svg" id="previewImage" alt="Preview">
+
+                        <input type="file" id="productImage" accept="image/*">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Product Name</label>
+
+                    <input type="text" id="productName" placeholder="Enter Product Name" required>
+                </div>
+
+                <div class="form-group">
+
+                    <label>Category</label>
+
+                    <select id="category" required>
+
+                        <option value="">Select Category</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Price (₹)</label>
+
+                    <input type="number" id="price" placeholder="Enter Price" required>
+                </div>
+
+                <div class="form-group">
+
+                    <label>Stock</label>
+
+                    <input type="number" id="stockQuantity" placeholder="Available Quantity" required>
+                </div>
+
+                <!-- <div class="form-group">
+
+                    <label>Brand</label>
+
+                    <input type="text" id="brand" placeholder="Brand Name">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Material</label>
+
+                    <input type="text" id="material" placeholder="Leather / Wood / Fabric">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Color</label>
+
+                    <input type="text" id="color" placeholder="Brown">
+
+                </div> -->
+
+                <div class="form-group">
+
+                    <label>Status</label>
+
+                    <select id="status" required>
+
+                        <option value="Active">Active</option>
+
+                        <option value="Inactive">Inactive</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group full-width">
+
+                    <label>Description</label>
+
+                    <textarea id="description" rows="5" placeholder="Enter Product Description" required></textarea>
+                </div>
+
+                <div class="button-group full-width">
+
+                    <button type="reset" class="cancel-btn">Cancel</button>
+
+                    <button type="button" class="save-btn" id="updateBtn">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        Update Product
+                    </button>
+
+                </div>
+
+            </form>
+
+        </main>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/admin-nav.js"></script>
+    <script src="/frontend/pages/edit-product/edit-product.js"></script>
+
+</body>
+
+</html>

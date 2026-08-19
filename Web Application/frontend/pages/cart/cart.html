@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="/frontend/pages/cart/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-right">
+
+                <!-- <button class="icon-btn">🔍</button> -->
+
+                <button class="icon-btn cart" id="cart-btn">🛒<span class="badge"  id="cartBadge">0</span></button>
+
+                <button class="login-btn" id="login-btn">Login</button>
+
+                <button class="signup-btn" id="signup-btn">Sign Up</button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="breadcrumb">
+
+        <div class="breadcrumb-container">
+
+            <a href="/frontend/pages/home/index.html">Home</a>
+
+            <span>/</span>
+
+            <a href="/frontend/pages/products/products.html">Products</a>
+
+            <span>/</span>
+
+            <span>Cart</span>
+
+        </div>
+
+    </section>
+
+    <!-- ********************************************* card header*************************************************** -->
+
+    <section class="cart-header">
+
+        <h1>Shopping Cart</h1>
+
+        <p>Review your selected items before proceeding to checkout.</p>
+
+    </section>
+
+    <!-- *********************************************** card container**************************************************** -->
+
+    <section class="cart-container">
+
+        <div class="cart-items" id="cartItems">
+
+            <!-- Cart products will load here -->
+
+        </div>
+
+    </section>
+
+    <!-- ********************************************* cart summary ***************************************************8 -->
+
+    <section class="cart-summary">
+
+        <!-- <div class="coupon-box">
+
+            <h2>Coupon Code</h2>
+
+            <div class="coupon-input">
+
+                <input type="text" placeholder="Enter Coupon Code">
+
+                <button>Apply</button>
+
+            </div>
+
+        </div> -->
+
+        <div class="order-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span id="shipping">Free</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Tax</span>
+                <span id="tax">₹0</span>
+            </div>
+
+            <hr>
+
+            <div class="summary-row total">
+                <span>Total</span>
+                <span id="total">₹0</span>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Proceed To Checkout
+            </button>
+        </div>
+
+    </section>
+
+    <!-- ****************************************** footer ****************************************************** -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>LuxeCraft</h2>
+
+                <p>
+                    Premium handcrafted sofas designed
+                    for luxury living.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="/frontend/pages/home/index.html">Home</a>
+
+                <a href="/frontend/pages/products/products.html">Products</a>
+
+                <a href="/frontend/pages/about/about.html">About</a>
+
+                <a href="/frontend/pages/contact/contact.html">Contact</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Customer Care</h3>
+
+                <a href="#">Shipping</a>
+
+                <a href="#">Returns</a>
+
+                <a href="#">FAQ</a>
+
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 LuxeCraft. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/cart/cart.js"></script>
+</body>
+
+</html>

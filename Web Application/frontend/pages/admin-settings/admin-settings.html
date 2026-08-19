@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="/frontend/pages/admin-settings/admin-settings.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <aside class="sidebar" id="adminSidebar"></aside>
+
+        <!-- *************************************************************************************** -->
+
+        <main class="main-content">
+
+            <!-- Header -->
+
+            <div class="top-header">
+
+                <div>
+
+                    <h1>Settings</h1>
+
+                    <p>Manage your account settings</p>
+
+                </div>
+
+            </div>
+
+            <!-- ****************************************************************************************** -->
+
+            <section class="card">
+
+                <h2><i class="fa-solid fa-user"></i>Admin Profile</h2>
+
+                <form id="profileForm">
+
+                    <div class="input-group">
+
+                        <label for="name">Full Name</label>
+
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="phone">Phone Number</label>
+
+                        <input type="text" id="phone">
+                    </div>
+
+                    <button type="submit" id="saveProfileBtn">
+
+                        <i class="fa-solid fa-floppy-disk"></i>Save Profile
+
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- ************************************************************************************************* -->
+
+            <section class="card">
+
+                <h2><i class="fa-solid fa-lock"></i>Change Password</h2>
+
+                <form id="passwordForm">
+
+                    <div class="input-group">
+
+                        <label for="currentPassword">Current Password</label>
+
+                        <div class="password-box">
+
+                            <input type="password" id="currentPassword" placeholder="Enter Current Password">
+
+                            <i class="fa-solid fa-eye toggle-password"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="newPassword">New Password</label>
+
+                        <div class="password-box">
+
+                            <input type="password" id="newPassword" placeholder="Enter New Password">
+
+                            <i class="fa-solid fa-eye toggle-password"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <div class="password-box">
+
+                            <input type="password" id="confirmPassword" placeholder="Confirm New Password">
+
+                            <i class="fa-solid fa-eye toggle-password"></i>
+
+                        </div>
+
+                    </div>
+
+                    <button type="submit" id="updatePasswordBtn">
+
+                        <i class="fa-solid fa-key"></i>Update Password
+
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- **************************************************************************** -->
+
+            <!-- <section class="card">
+
+                <h2><i class="fa-solid fa-floppy-disk"></i>Save Settings</h2>
+
+                <p>Save all changes made in your account settings.</p>
+
+                <button id="saveSettingsBtn">
+
+                    <i class="fa-solid fa-check"></i>Save All Settings
+
+                </button>
+
+            </section> -->
+
+        </main>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/admin-nav.js"></script>
+    <script src="/frontend/pages/admin-settings/admin-settings.js"></script>
+
+</body>
+
+</html>

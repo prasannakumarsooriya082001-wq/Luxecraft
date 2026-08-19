@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Details</title>
+
+    <link rel="stylesheet" href="/frontend/pages/order-details/order-details.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="nav-right">
+
+                <!-- CART -->
+
+                <button class="icon-btn1 cart1" id="cartButton">
+
+                    🛒
+
+                    <span class="badge" id="cartBadge">
+                        0
+                    </span>
+
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <button class="login-btn1" id="loginButton">
+
+                    Login
+
+                </button>
+
+
+                <!-- SIGN UP -->
+
+                <button class="signup-btn1" id="signupButton">
+
+                    Sign Up
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button class="profile-btn1" id="profileButton" style="display:none;">
+
+                    <span id="profileName">Profile</span>
+
+                </button>
+
+
+                <!-- LOGOUT -->
+
+                <button class="logout-btn1" id="logoutButton" style="display:none;">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <h1>Order Details</h1>
+
+        <p>View your order information and delivery details.</p>
+
+    </section>
+
+
+    <!-- ================= ORDER DETAILS ================= -->
+
+    <section class="order-details-container">
+
+        <div class="order-card">
+
+            <div class="order-header">
+
+                <div>
+
+                    <span>Order ID</span>
+
+                    <h2 id="orderId">#---</h2>
+
+                </div>
+
+                <div>
+
+                    <span>Status</span>
+
+                    <h3 id="orderStatus">---</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- STATUS TIMELINE -->
+
+            <div class="order-timeline" id="orderTimeline"></div>
+
+
+            <!-- ORDER ACTIONS -->
+
+            <div class="order-actions" id="orderActions">
+
+                <button class="cancel-order-btn" id="cancelOrderBtn" style="display:none;">
+                    Cancel order
+                </button>
+
+                <p class="order-action-message" id="orderActionMessage"></p>
+
+            </div>
+
+
+            <!-- CUSTOMER DETAILS -->
+
+            <div class="details-section">
+
+                <h2>Customer Details</h2>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="customerName"></span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="customerEmail"></span>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    <span id="customerPhone"></span>
+                </p>
+
+            </div>
+
+
+            <!-- SHIPPING ADDRESS -->
+
+            <div class="details-section">
+
+                <h2>Shipping Address</h2>
+
+                <p id="shippingAddress"></p>
+
+            </div>
+
+
+            <!-- PAYMENT -->
+
+            <div class="details-section">
+
+                <h2>Payment</h2>
+
+                <p>
+                    <strong>Payment Method:</strong>
+                    <span id="paymentMethod"></span>
+                </p>
+
+            </div>
+
+
+            <!-- ================= ORDER ITEMS ================= -->
+
+            <div class="details-section">
+
+                <h2>Ordered Items</h2>
+
+                <div id="orderItems">
+
+                    <!-- Products will come from database -->
+
+                </div>
+
+            </div>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <div class="details-section">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+
+                    <span>Subtotal</span>
+
+                    <span id="subtotal">
+                        ₹0.00
+                    </span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>Tax</span>
+
+                    <span id="tax">
+                        ₹0.00
+                    </span>
+
+                </div>
+
+                <div class="summary-row total">
+
+                    <span>Total</span>
+
+                    <span id="totalAmount">
+                        ₹0.00
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button class="back-btn" onclick="window.location.href='/frontend/pages/orders/order.html'">
+
+                Back to My Orders
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/nav.js"></script>
+    <script src="/frontend/pages/order-details/order-details.js"></script>
+
+</body>
+
+</html>

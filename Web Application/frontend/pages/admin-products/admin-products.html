@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products Management</title>
+
+    <link rel="stylesheet" href="/frontend/pages/admin-products/admin-products.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar" id="adminSidebar"></aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <div class="top-header">
+
+                <div>
+
+                    <h1>Products Management</h1>
+
+                    <p>Manage all sofa products.</p>
+
+                </div>
+
+                <button class="add-product-btn" id="add-product">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Product
+                </button>
+
+            </div>
+
+            <!-- Inventory summary -->
+
+            <div class="inventory-summary" id="inventorySummary">
+
+                <div class="inv-card">
+                    <span class="inv-label">Total products</span>
+                    <span class="inv-value" id="invTotal">-</span>
+                </div>
+
+                <div class="inv-card warn">
+                    <span class="inv-label">Running low</span>
+                    <span class="inv-value" id="invLow">-</span>
+                </div>
+
+                <div class="inv-card danger">
+                    <span class="inv-label">Out of stock</span>
+                    <span class="inv-value" id="invOut">-</span>
+                </div>
+
+            </div>
+
+            <!-- Search -->
+
+            <div class="toolbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" id="search" placeholder="Search Product">
+
+                </div>
+
+                <div class="category-wrapper">
+                    <select class="category-filter" id="category">
+                        <option>All Categories</option>
+                        <option>Luxury Sofa</option>
+                        <option>Recliner Sofa</option>
+                    </select>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <label class="low-stock-toggle">
+                    <input type="checkbox" id="lowStockOnly">
+                    Low stock only
+                </label>
+
+            </div>
+
+            <!-- Product Table -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Image</th>
+
+                            <th>Product</th>
+
+                            <th>Category</th>
+
+                            <th>Price</th>
+
+                            <th>Stock</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="productTableBody"></tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/admin-nav.js"></script>
+    <script src="/frontend/pages/admin-products/admin-products.js"></script>
+
+</body>
+
+</html>

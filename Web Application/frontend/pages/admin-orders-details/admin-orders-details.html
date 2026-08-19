@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Details</title>
+
+    <link rel="stylesheet" href="/frontend/pages/admin-orders-details/admin-orders-details.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>Order Details</h1>
+
+            <a href="/frontend/pages/admin-orders/admin-orders.html" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Orders
+
+            </a>
+
+        </header>
+
+        <!-- Order Summary -->
+
+        <div class="card">
+
+            <h2>Order Information</h2>
+
+            <div class="details-grid">
+
+                <div>
+                    <strong>Order ID</strong>
+                    <p class="order-id" id="orderId">-</p>
+                </div>
+
+                <div>
+                    <strong>Order Date</strong>
+                    <p id="orderDate">-</p>
+                </div>
+
+                <div>
+                    <strong>Delivery Date</strong>
+                    <p id="deliveryDate">-</p>
+                </div>
+
+                <div>
+                    <strong>Status</strong>
+
+                    <span id="statusBadge" class="status status-badge pending">
+                        -
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Customer -->
+
+        <div class="card">
+
+            <h2>Customer Information</h2>
+
+            <div class="details-grid">
+
+                <div>
+
+                    <div class="item">
+
+                        <h4>Name</h4>
+
+                        <p id="customerName">-</p>
+
+                    </div>
+
+                    <div class="item">
+
+                        <h4>Email</h4>
+
+                        <p id="customerEmail">-</p>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="item">
+
+                        <h4>Phone</h4>
+
+                        <p id="customerPhone">-</p>
+
+                    </div>
+
+                    <div class="item">
+
+                        <h4>Address</h4>
+
+                        <p id="customerAddress">-</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product -->
+
+        <div class="card">
+
+            <h2>Product Information</h2>
+
+            <div class="product-box">
+
+                <img id="productImage" class="product-image" src="/frontend/assets/images/MainSofaImage.jpg">
+
+                <div>
+
+                    <h3 id="productName">-</h3>
+
+                    <p>
+                        Quantity :
+                        <span id="productQuantity">-</span>
+                    </p>
+
+                    <p>
+                        Price :
+                        ₹<span id="productPrice">0</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Payment -->
+
+        <div class="card">
+
+            <h2>Payment Information</h2>
+
+            <div class="details-grid">
+
+                <div>
+
+                    <strong>Payment Method</strong>
+
+                    <p id="paymentMethod">-</p>
+
+                </div>
+
+                <div>
+
+                    <strong>Payment Status</strong>
+
+                    <span class="paid">
+                        Paid
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <strong>Total Amount</strong>
+
+                    <h2>
+                        ₹<span id="totalAmount">0</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Update -->
+
+        <div class="card">
+
+            <h2>Update Order Status</h2>
+
+            <select id="orderStatus">
+
+                <option value="PENDING">
+                    Pending
+                </option>
+
+                <option value="IN PROGRESS">
+                    In Progress
+                </option>
+
+                <option value="DELIVERED">
+                    Delivered
+                </option>
+
+                <option value="CANCELLED">
+                    Cancelled
+                </option>
+
+            </select>
+
+            <button id="updateBtn">
+                Update Status
+            </button>
+
+        </div>
+
+
+        <!-- Status history -->
+
+        <div class="card">
+
+            <h2>Status History</h2>
+
+            <div id="statusHistory" class="status-history">
+                <p class="history-empty">Loading...</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/admin-orders-details/admin-orders-details.js"></script>
+
+</body>
+
+</html>

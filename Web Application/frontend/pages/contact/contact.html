@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - LuxeCraft</title>
+
+    <link rel="stylesheet" href="/frontend/pages/contact/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container">
+
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    L
+                </div>
+
+                <h2>
+                    LuxeCraft
+                </h2>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- NAV RIGHT -->
+
+            <div class="nav-right">
+
+
+                <!-- CART -->
+
+                <button class="icon-btn1 cart1" id="cartButton">
+
+                    🛒
+
+                    <span class="badge" id="cartBadge">
+                        0
+                    </span>
+
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <button class="login-btn1" id="loginButton">
+
+                    Login
+
+                </button>
+
+
+                <!-- SIGN UP -->
+
+                <button class="signup-btn1" id="signupButton">
+
+                    Sign Up
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button class="profile-btn1" id="profileButton" style="display:none;">
+
+                    👤
+
+                    <span id="profileName">
+                        Profile
+                    </span>
+
+                </button>
+
+
+                <!-- LOGOUT -->
+
+                <button class="logout-btn1" id="logoutButton" style="display:none;">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         BREADCRUMB
+    ====================================================== -->
+
+    <section class="breadcrumb">
+
+        <div class="breadcrumb-container">
+
+            <a href="/frontend/pages/home/index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <span>
+                Contact
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT HERO
+    ====================================================== -->
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-container">
+
+            <span>
+                GET IN TOUCH
+            </span>
+
+            <h1>
+                We'd Love To
+                <span>Hear From You</span>
+            </h1>
+
+            <p>
+                Have a question about our sofas, orders or delivery?
+                Our team is here to help you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT INFORMATION
+    ====================================================== -->
+
+    <section class="contact-info-section">
+
+        <div class="contact-info-container">
+
+
+            <!-- LOCATION -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+                <h3>
+                    Visit Us
+                </h3>
+
+                <p>
+                    LuxeCraft Furniture
+                </p>
+
+                <span>
+                    Madurai, Tamil Nadu
+                </span>
+
+            </div>
+
+
+
+            <!-- PHONE -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <h3>
+                    Call Us
+                </h3>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+                <span>
+                    Mon - Sat, 9 AM - 7 PM
+                </span>
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <h3>
+                    Email Us
+                </h3>
+
+                <p>
+                    support@luxecraft.com
+                </p>
+
+                <span>
+                    We reply within 24 hours
+                </span>
+
+            </div>
+
+
+
+            <!-- HOURS -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <h3>
+                    Working Hours
+                </h3>
+
+                <p>
+                    Monday - Saturday
+                </p>
+
+                <span>
+                    9:00 AM - 7:00 PM
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT FORM + MAP
+    ====================================================== -->
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+
+            <!-- =================================================
+                 CONTACT FORM
+            ================================================== -->
+
+            <div class="contact-form-box">
+
+                <span class="section-label">
+                    SEND US A MESSAGE
+                </span>
+
+                <h2>
+                    How Can We Help?
+                </h2>
+
+                <p class="form-description">
+                    Fill out the form below and our team will
+                    get back to you as soon as possible.
+                </p>
+
+
+                <form id="contactForm">
+
+
+                    <!-- NAME -->
+
+                    <div class="input-row">
+
+                        <div class="input-box">
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input type="text" id="name" placeholder="Enter your name" required>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="input-box">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="email" placeholder="Enter your email" required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="input-row">
+
+                        <div class="input-box">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                        </div>
+
+
+                        <!-- SUBJECT -->
+
+                        <div class="input-box">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input type="text" id="subject" placeholder="Enter subject" required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="input-box">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+                    </div>
+
+
+
+                    <!-- BUTTON -->
+
+                    <button type="submit" class="send-btn">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Send Message
+
+                    </button>
+
+
+                    <!-- SUCCESS MESSAGE -->
+
+                    <p id="successMessage" class="success-message">
+                    </p>
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOCATION
+            ================================================== -->
+
+            <div class="location-box">
+
+                <div class="location-header">
+
+                    <span class="section-label">
+                        OUR LOCATION
+                    </span>
+
+                    <h2>
+                        Come Visit Us
+                    </h2>
+
+                    <p>
+                        Visit our showroom and experience the
+                        comfort and quality of LuxeCraft sofas.
+                    </p>
+
+                </div>
+
+
+                <!-- MAP PLACEHOLDER -->
+
+                <div class="map-box">
+
+                    <div class="map-content">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>
+                            LuxeCraft Furniture
+                        </h3>
+
+                        <p>
+                            Madurai, Tamil Nadu
+                        </p>
+
+                        <button id="directionBtn">
+
+                            Get Directions
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FAQ
+    ====================================================== -->
+
+    <!-- <section class="faq-section">
+
+        <div class="section-title">
+
+            <span>
+                FAQ
+            </span>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+            <p>
+                Quick answers to common questions.
+            </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How can I track my order?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        You can track your order from the Orders
+                        section in your LuxeCraft profile.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How long does delivery take?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Delivery time depends on your location.
+                        Our team will provide the estimated
+                        delivery date after your order is placed.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Can I return a sofa?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Return eligibility depends on the
+                        product and order conditions. Please contact
+                        our support team for assistance.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How can I contact LuxeCraft?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        You can contact us through phone, email or
+                        the contact form available on this page.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="contact-cta">
+
+        <div>
+
+            <h2>
+                Looking For Your Perfect Sofa?
+            </h2>
+
+            <p>
+                Explore our premium collection today.
+            </p>
+
+            <button id="shopSofasBtn">
+                Shop Sofas
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-box footer-about">
+
+                <div class="footer-logo">
+
+                    <div class="logo-icon">
+                        L
+                    </div>
+
+                    <h2>
+                        LuxeCraft
+                    </h2>
+
+                </div>
+
+                <p>
+                    Premium sofas crafted with comfort,
+                    quality and timeless elegance.
+                </p>
+
+                <div class="footer-contact">
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Madurai, Tamil Nadu
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        support@luxecraft.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-box">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="/frontend/pages/home/index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/products/products.html">
+                            Sofas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/about/about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/contact/contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- CUSTOMER -->
+
+            <div class="footer-box">
+
+                <h3>
+                    Customer
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="/frontend/pages/profile/profile.html">
+                            My Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/cart/cart.html">
+                            Cart
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/wishlist/wishlist.html">
+                            Wishlist
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- FOLLOW -->
+
+            <div class="footer-box">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <p>
+                    Stay connected with LuxeCraft.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LuxeCraft. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- COMMON NAV -->
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/nav.js"></script>
+
+    <!-- CONTACT JS -->
+
+    <script src="/frontend/pages/contact/contact.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="/frontend/pages/products/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/wishlist/wishlist.html">Wishlist</a></li>
+                    <li><a href="/frontend/pages/orders/order.html" data-requires-login>My Orders</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="nav-right">
+
+                <button class="icon-btn" id="searchButton">
+                    🔍
+                </button>
+
+
+                <button class="icon-btn cart" id="cart-btn">
+
+                    🛒
+
+                    <span class="badge" id="cartBadge">
+                        0
+                    </span>
+
+                </button>
+
+
+                <button class="login-btn" id="login-btn">
+                    Login
+                </button>
+
+
+                <button class="signup-btn" id="signup-btn">
+                    Sign Up
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section class="breadcrumb">
+
+        <div class="breadcrumb-container">
+
+            <a href="/frontend/pages/home/index.html">Home</a>
+
+            <span>/</span>
+
+            <a href="/frontend/pages/products/products.html">Products</a>
+
+        </div>
+
+    </section>
+
+    <!-- ********************************************************* search ************************************************************* -->
+
+    <section class="product-controls">
+
+        <input type="text" id="searchInput" placeholder="Search sofas..." class="search-box">
+
+
+        <div class="select-wrapper">
+            <select class="category-filter" id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+
+        <div class="select-wrapper">
+            <select class="category-filter" id="sortFilter">
+                <option value="">Sort: Default</option>
+                <option value="price_asc">Price: Low to High</option>
+                <option value="price_desc">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+            </select>
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+    </section>
+
+    <!-- ************************************************************************************************************************ -->
+
+    <section class="products">
+
+        <div class="section-title">
+            <h2>Our Premium Collection</h2>
+            <p>Discover handcrafted luxury sofas for every home.</p>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="pagination" id="pagination"></div>
+
+    </section>
+
+    <!-- *********************************************************************************************************** -->
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-box footer-about">
+
+                <div class="footer-logo">
+
+                    <div class="logo-icon">
+                        L
+                    </div>
+
+                    <h2>
+                        LuxeCraft
+                    </h2>
+
+                </div>
+
+                <p>
+                    Premium sofas crafted with comfort,
+                    quality and timeless elegance.
+                </p>
+
+                <div class="contact-info">
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Madurai, Tamil Nadu
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        support@luxecraft.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="/frontend/pages/home/index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/products/products.html">
+                            Sofas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/about/about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/contact/contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Customer
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="/frontend/pages/profile/profile.html">
+                            My Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/cart/cart.html">
+                            Cart
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/frontend/pages/wishlist/wishlist.html">
+                            Wishlist
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <p>
+                    Stay connected with LuxeCraft.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LuxeCraft. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/products/products.js"></script>
+</body>
+
+</html>

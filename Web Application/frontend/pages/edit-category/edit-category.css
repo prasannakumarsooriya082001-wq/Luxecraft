@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F5F6FA;
+    color:#2B2420;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* =====================================
+                Header
+===================================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:32px;
+}
+
+.back-btn{
+    text-decoration:none;
+    background:#A6572E;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#7C3E1D;
+}
+
+.back-btn i{
+    margin-right:8px;
+}
+
+/* =====================================
+                Card
+===================================== */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* =====================================
+            Form Group
+===================================== */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:22px;
+}
+
+.form-group label{
+    font-weight:600;
+    margin-bottom:8px;
+    color:#444;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+    background:white;
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    border:2px solid #A6572E;
+}
+
+/* =====================================
+            Buttons
+===================================== */
+
+.button-group{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.update-btn,
+.cancel-btn{
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.update-btn{
+    background:#A6572E;
+    color:white;
+}
+
+.update-btn:hover{
+    background:#7C3E1D;
+}
+
+.cancel-btn{
+    background:#E5E7EB;
+    color:#2B2420;
+}
+
+.cancel-btn:hover{
+    background:#D1D5DB;
+}
+
+.update-btn i,
+.cancel-btn i{
+    margin-right:8px;
+}
+
+/* =====================================
+        Readonly Field
+===================================== */
+
+input[readonly]{
+    background:#F3F4F6;
+    cursor:not-allowed;
+}
+

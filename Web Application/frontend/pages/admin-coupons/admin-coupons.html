@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coupons Management</title>
+
+    <link rel="stylesheet" href="/frontend/pages/admin-coupons/admin-coupons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <aside class="sidebar" id="adminSidebar"></aside>
+
+        <main class="main-content">
+
+            <div class="top-header">
+
+                <div>
+
+                    <h1>Coupons Management</h1>
+
+                    <p>Create and manage discount codes.</p>
+
+                </div>
+
+                <button class="add-coupon-btn" id="openFormBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Coupon
+                </button>
+
+            </div>
+
+            <!-- Add / edit form -->
+
+            <div class="coupon-form-panel" id="couponFormPanel" hidden>
+
+                <h2 id="formTitle">Add Coupon</h2>
+
+                <input type="hidden" id="couponId">
+
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="code">Code</label>
+                        <input type="text" id="code" placeholder="LUXE10">
+                    </div>
+
+                    <div class="field">
+                        <label for="discountType">Discount type</label>
+                        <select id="discountType">
+                            <option value="PERCENT">Percentage (%)</option>
+                            <option value="FLAT">Flat amount (₹)</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="discountValue">Discount value</label>
+                        <input type="number" id="discountValue" min="1" step="0.01" placeholder="10">
+                    </div>
+
+                    <div class="field">
+                        <label for="minOrderAmount">Minimum order (₹)</label>
+                        <input type="number" id="minOrderAmount" min="0" step="0.01" placeholder="5000">
+                    </div>
+
+                    <div class="field" id="maxDiscountField">
+                        <label for="maxDiscount">Maximum discount (₹)</label>
+                        <input type="number" id="maxDiscount" min="0" step="0.01" placeholder="2000">
+                        <small>Caps a percentage discount. Leave blank for no cap.</small>
+                    </div>
+
+                    <div class="field">
+                        <label for="usageLimit">Usage limit</label>
+                        <input type="number" id="usageLimit" min="1" step="1" placeholder="Unlimited">
+                    </div>
+
+                    <div class="field">
+                        <label for="validFrom">Valid from</label>
+                        <input type="datetime-local" id="validFrom">
+                    </div>
+
+                    <div class="field">
+                        <label for="validTo">Valid until</label>
+                        <input type="datetime-local" id="validTo">
+                    </div>
+
+                    <div class="field checkbox-field">
+                        <label>
+                            <input type="checkbox" id="active" checked>
+                            Active
+                        </label>
+                    </div>
+
+                </div>
+
+                <p class="form-message" id="formMessage"></p>
+
+                <div class="form-actions">
+                    <button class="save-btn" id="saveCouponBtn">Save coupon</button>
+                    <button class="cancel-btn" id="cancelFormBtn">Cancel</button>
+                </div>
+
+            </div>
+
+            <!-- Coupon table -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Code</th>
+                            <th>Discount</th>
+                            <th>Min order</th>
+                            <th>Validity</th>
+                            <th>Used</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="couponTableBody"></tbody>
+
+                </table>
+
+                <p class="empty-state" id="emptyState" hidden>
+                    No coupons yet. Create one to get started.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/common/admin-nav.js"></script>
+    <script src="/frontend/pages/admin-coupons/admin-coupons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F5F6FA;
+    color: #2B2420;
+}
+
+/* =======================================
+            Layout
+======================================= */
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 35px;
+}
+
+/* =======================================
+            Sidebar
+======================================= */
+
+.sidebar {
+    width: 270px;
+    background: #A6572E;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background: #723a19;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sidebar-logo h2 {
+    font-size: 30px;
+}
+
+.sidebar-menu {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    margin-bottom: 12px;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li.active a {
+    background:  #723a19;
+}
+
+/* =======================================
+            Header
+======================================= */
+
+.top-header {
+    margin-bottom: 35px;
+}
+
+.top-header h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.top-header p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* =======================================
+        Statistics Cards
+======================================= */
+
+.statistics {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 40px;
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+    cursor: pointer;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.card i {
+
+    font-size: 34px;
+
+    color: #A6572E;
+
+    margin-bottom: 18px;
+
+}
+
+.card h4 {
+
+    color: #777;
+
+    margin-bottom: 10px;
+
+    font-weight: 500;
+
+}
+
+.card h2 {
+
+    font-size: 30px;
+
+}
+
+/* =======================================
+            Charts
+======================================= */
+
+.charts-container {
+
+    margin-bottom: 30px;
+
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.chart-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+
+}
+
+.chart-header {
+
+    margin-bottom: 20px;
+
+}
+
+.chart-header h2 {
+
+    color: #2B2420;
+
+    margin-bottom: 6px;
+
+}
+
+.chart-header p {
+
+    color: #777;
+
+}
+
+/* #revenueChart {
+
+    width: 100%;
+
+    height: 380px;
+
+} */
+
+/* =======================================
+        Small Charts
+======================================= */
+
+.small-charts {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+
+}
+
+#categoryChart,
+#statusChart {
+
+    width: 100%;
+
+    height: 320px;
+
+}
+
+
+/* =======================================
+            Toolbar
+======================================= */
+
+.toolbar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+
+}
+
+.toolbar input {
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: white;
+
+}
+
+.toolbar input:focus {
+
+    border: 2px solid #A6572E;
+
+}
+
+.toolbar button {
+
+    background: #A6572E;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 22px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    font-size: 15px;
+
+}
+
+.toolbar button:hover {
+
+    background: #7C3E1D;
+
+}
+
+.toolbar button i {
+
+    margin-right: 8px;
+
+}
+
+/* =======================================
+            Sales Table
+======================================= */
+
+.table-wrapper {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+thead {
+
+    background: #A6572E;
+
+    color: white;
+
+}
+
+th {
+
+    padding: 18px;
+
+    text-align: left;
+
+}
+
+td {
+
+    padding: 18px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+tbody tr {
+
+    transition: .3s;
+
+}
+
+tbody tr:hover {
+
+    background: #F8F8F8;
+
+}
+
+/* =======================================
+        Status Badge
+======================================= */
+
+.delivered {
+
+    background: #28A745;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+}
+
+.processing {
+
+    background: #17A2B8;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+}
+
+.pending {
+
+    background: #FFC107;
+
+    color: #222;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+}
+
+.cancelled {
+
+    background: #DC3545;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+}
+
+
+
+
+
+/* =======================================
+        Scrollbar
+======================================= */
+
+/* ::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #A6572E;
+
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #EEE;
+
+} */

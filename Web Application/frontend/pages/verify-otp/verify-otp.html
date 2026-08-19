@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verify OTP</title>
+
+    <link rel="stylesheet" href="/frontend/pages/verify-otp/verify-otp.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div class="logo-icon">L</div>
+
+                <h2>LuxeCraft</h2>
+
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/frontend/pages/home/index.html">Home</a></li>
+                    <li><a href="/frontend/pages/products/products.html">Sofas</a></li>
+                    <li><a href="/frontend/pages/about/about.html">About</a></li>
+                    <li><a href="/frontend/pages/contact/contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-right">
+
+                <button class="icon-btn1">🔍</button>
+
+                <button class="icon-btn1 cart1">🛒<span class="badge">2</span></button>
+
+                <button class="login-btn1">Login</button>
+
+                <button class="signup-btn1">Sign Up</button>
+
+            </div>
+
+        </div>
+
+    </header> -->
+
+
+    <!-- **************************************************************************************************** -->
+
+    <section class="otp-section">
+
+        <div class="otp-container">
+
+            <div class="otp-image">
+
+                <img src="/frontend/assets/images/sofa1.jpg" alt="Luxury Sofa">
+
+                <div class="overlay">
+
+                    <h2>Verify Your Identity</h2>
+
+                    <p>Enter the verification code sent to your registered email.</p>
+
+                </div>
+
+            </div>
+
+            <div class="otp-form">
+
+                <h2>Verify OTP</h2>
+
+                <p>Enter the 6-digit code sent to your email.</p>
+
+                <form id="otpForm">
+
+                    <div class="otp-inputs">
+
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]">
+
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]">
+
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]">
+
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]">
+
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]">
+
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]">
+
+                    </div>
+
+                    <button type="submit" class="verify-btn">Verify OTP</button>
+
+                    <p class="resend">
+                        Didn't receive the code?
+                        <a href="#">Resend OTP</a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="/frontend/common/api-config.js"></script>
+    <script src="/frontend/pages/verify-otp/verify-otp.js"></script>
+
+</body>
+
+</html>
