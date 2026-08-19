@@ -36,7 +36,11 @@ build/
 src/main/resources/static/uploads/
 
 ### Local secrets - never commit
-src/main/resources/application-local.properties
+### Matched anywhere in the tree, so a copy in another module is still ignored.
+**/application-local.properties
+**/application-secrets.properties
+.env
+.env.*
 
 ### Uploaded product images (runtime data)
 uploads/
